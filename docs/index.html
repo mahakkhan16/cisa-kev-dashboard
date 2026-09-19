@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CISA KEV Tracker — Known Exploited Vulnerabilities</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #14161A;
+    --panel: #1C1F26;
+    --panel-raised: #22262F;
+    --line: #30343E;
+    --text: #EAEDF2;
+    --text-dim: #9AA1AE;
+    --text-faint: #616873;
+    --critical: #E5484D;
+    --critical-dim: #3A2124;
+    --warn: #F5A623;
+    --ok: #3DD68C;
+    --accent: #5B8DEF;
+    --font-ui: 'IBM Plex Sans', system-ui, sans-serif;
+    --font-mono: 'IBM Plex Mono', 'Courier New', monospace;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font-ui);
+    min-height: 100vh;
+  }
+  .wrap { max-width: 1100px; margin: 0 auto; padding: 32px 20px 80px; }
+
+  .topbar {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 14px;
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 22px;
+    margin-bottom: 28px;
+  }
+  .title-block h1 {
+    font-size: 22px;
+    margin: 0 0 6px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .title-block .pulse {
+    width: 8px; height: 8px; border-radius: 50%;
+    background: var(--ok);
+    box-shadow: 0 0 0 4px rgba(61,214,140,0.15);
+    flex-shrink: 0;
+  }
+  .title-block p {
+    margin: 0;
+    color: var(--text-dim);
+    font-size: 13.5px;
+    max-width: 60ch;
+    line-height: 1.5;
+  }
+  .meta-box {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    color: var(--text-faint);
+    text-align: right;
+  }
+  .meta-box a { color: var(--accent); text-decoration: none; }
+  .meta-box a:hover { text-decoration: underline; }
+
+  .stat-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 14px;
+    margin-bottom: 34px;
+  }
+  .stat-card {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    padding: 20px 22px;
+  }
+  .stat-card .num {
+    font-family: var(--font-mono);
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1;
+  }
+  .stat-card.critical .num { color: var(--critical); }
+  .stat-card.warn .num { color: var(--warn); }
+  .stat-card.ok .num { color: var(--ok); }
+  .stat-card .label {
+    font-size: 12px;
+    color: var(--text-dim);
+    margin-top: 8px;
+  }
+
+  h2 {
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--text-dim);
+    margin: 0 0 16px;
+    font-weight: 600;
+  }
+
+  .section { margin-bottom: 40px; }
+
+  /* vendor bars */
+  .vendor-list { display: flex; flex-direction: column; gap: 10px; }
+  .vendor-row { display: grid; grid-template-columns: 160px 1fr 40px; align-items: center; gap: 12px; }
+  .vendor-name { font-size: 13px; color: var(--text); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .vendor-track { background: var(--panel); border: 1px solid var(--line); height: 20px; position: relative; }
+  .vendor-fill { background: var(--accent); height: 100%; }
+  .vendor-count { font-family: var(--font-mono); font-size: 12px; color: var(--text-dim); text-align: right; }
+
+  /* recent entries */
+  .entry-list { display: flex; flex-direction: column; gap: 10px; }
+  .entry {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    padding: 16px 18px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 10px 16px;
+  }
+  .entry.ransomware { border-color: var(--critical); background: linear-gradient(180deg, var(--critical-dim), var(--panel) 60%); }
+
+  .entry-head { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+  .cve-id { font-family: var(--font-mono); font-weight: 700; font-size: 13px; color: var(--accent); }
+  .entry-title { font-size: 14px; font-weight: 600; }
+  .entry-vendor { font-size: 12px; color: var(--text-dim); }
+  .entry-desc { font-size: 12.5px; color: var(--text-dim); line-height: 1.55; grid-column: 1 / -1; }
+
+  .tag {
+    font-family: var(--font-mono);
+    font-size: 10.5px;
+    font-weight: 600;
+    padding: 3px 8px;
+    border: 1px solid var(--critical);
+    color: var(--critical);
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    white-space: nowrap;
+    height: fit-content;
+  }
+  .dates {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--text-faint);
+    text-align: right;
+    white-space: nowrap;
+  }
+
+  .loading, .error {
+    font-family: var(--font-mono);
+    color: var(--text-dim);
+    padding: 40px 0;
+    text-align: center;
+  }
+  .error { color: var(--critical); }
+
+  footer {
+    margin-top: 40px;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--text-faint);
+    border-top: 1px solid var(--line);
+    padding-top: 16px;
+    line-height: 1.7;
+  }
+  footer a { color: var(--text-faint); }
+
+  @media (max-width: 600px) {
+    .vendor-row { grid-template-columns: 100px 1fr 34px; }
+    .meta-box { text-align: left; }
+    .topbar { flex-direction: column; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="topbar">
+    <div class="title-block">
+      <h1><span class="pulse"></span>CISA KEV Tracker</h1>
+      <p>Live tracking of the U.S. Cybersecurity &amp; Infrastructure Security Agency's catalog of vulnerabilities confirmed to be actively exploited in the wild.</p>
+    </div>
+    <div class="meta-box" id="metaBox">Loading catalog metadata…</div>
+  </div>
+
+  <div id="content">
+    <div class="loading">Fetching latest vulnerability data…</div>
+  </div>
+
+  <footer>
+    Data sourced from CISA's public Known Exploited Vulnerabilities (KEV) catalog, refreshed daily via an automated pipeline. This dashboard is an independent project and is not affiliated with CISA.<br>
+    Source feed: <a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog" target="_blank" rel="noopener">cisa.gov/known-exploited-vulnerabilities-catalog</a>
+  </footer>
+</div>
+
+<script>
+(async function(){
+  const content = document.getElementById('content');
+  const metaBox = document.getElementById('metaBox');
+
+  function escapeHtml(str){
+    if(!str) return '';
+    return str.replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m]));
+  }
+
+  function formatDate(d){
+    if(!d) return '—';
+    try {
+      return new Date(d + 'T00:00:00Z').toLocaleDateString('en-US', { year:'numeric', month:'short', day:'numeric' });
+    } catch(e){ return d; }
+  }
+
+  try {
+    const res = await fetch('data.json', { cache: 'no-store' });
+    if(!res.ok) throw new Error('Could not load data.json (' + res.status + ')');
+    const data = await res.json();
+
+    const generated = new Date(data.generatedAt);
+    metaBox.innerHTML = `Catalog v${escapeHtml(data.catalogVersion || '—')}<br>Snapshot updated: ${generated.toLocaleString()}`;
+
+    const maxVendorCount = Math.max(...data.topVendors.map(v => v.count), 1);
+
+    const vendorRows = data.topVendors.map(v => `
+      <div class="vendor-row">
+        <div class="vendor-name">${escapeHtml(v.vendor)}</div>
+        <div class="vendor-track"><div class="vendor-fill" style="width:${(v.count/maxVendorCount*100).toFixed(1)}%"></div></div>
+        <div class="vendor-count">${v.count}</div>
+      </div>
+    `).join('');
+
+    const entryCards = data.recentEntries.map(e => {
+      const isRansomware = (e.knownRansomwareCampaignUse || '').toLowerCase() === 'known';
+      return `
+        <div class="entry ${isRansomware ? 'ransomware' : ''}">
+          <div class="entry-head">
+            <span class="cve-id">${escapeHtml(e.cveID)}</span>
+            <span class="entry-title">${escapeHtml(e.vulnerabilityName)}</span>
+          </div>
+          ${isRansomware ? '<span class="tag">Ransomware-linked</span>' : '<span></span>'}
+          <div class="entry-vendor" style="grid-column:1/-1;">${escapeHtml(e.vendorProject)} — ${escapeHtml(e.product)}</div>
+          <div class="entry-desc">${escapeHtml(e.shortDescription)}</div>
+          <div class="dates" style="grid-column:1/-1; text-align:left;">Added ${formatDate(e.dateAdded)} · Federal remediation due ${formatDate(e.dueDate)}</div>
+        </div>
+      `;
+    }).join('');
+
+    content.innerHTML = `
+      <div class="stat-grid">
+        <div class="stat-card">
+          <div class="num">${data.totalCount.toLocaleString()}</div>
+          <div class="label">Total catalog entries</div>
+        </div>
+        <div class="stat-card ok">
+          <div class="num">${data.addedLast30Days}</div>
+          <div class="label">Added in last 30 days</div>
+        </div>
+        <div class="stat-card critical">
+          <div class="num">${data.ransomwareLinkedCount.toLocaleString()}</div>
+          <div class="label">Linked to ransomware campaigns</div>
+        </div>
+        <div class="stat-card warn">
+          <div class="num">${data.overdueCount.toLocaleString()}</div>
+          <div class="label">Past federal remediation deadline</div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>Top vendors by exploited-vulnerability count</h2>
+        <div class="vendor-list">${vendorRows}</div>
+      </div>
+
+      <div class="section">
+        <h2>Most recently added vulnerabilities</h2>
+        <div class="entry-list">${entryCards}</div>
+      </div>
+    `;
+  } catch(err){
+    content.innerHTML = `<div class="error">Failed to load vulnerability data: ${escapeHtml(err.message)}</div>`;
+    metaBox.textContent = 'Error loading metadata';
+  }
+})();
+</script>
+</body>
+</html>
