@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-09-21T17:18:50.218795+00:00",
-  "catalogVersion": "2026.09.18",
-  "dateReleased": "2026-09-18T19:00:05.0974Z",
-  "totalCount": 1716,
-  "addedLast30Days": 42,
+  "generatedAt": "2026-09-22T15:52:26.792234+00:00",
+  "catalogVersion": "2026.09.21",
+  "dateReleased": "2026-09-21T18:46:35.0873Z",
+  "totalCount": 1717,
+  "addedLast30Days": 43,
   "ransomwareLinkedCount": 360,
-  "overdueCount": 1708,
+  "overdueCount": 1711,
   "topVendors": [
     {
       "vendor": "Microsoft",
@@ -49,6 +49,16 @@
     }
   ],
   "recentEntries": [
+    {
+      "cveID": "CVE-2026-7273",
+      "vendorProject": "Zyxel",
+      "product": "GS1900 Series Switches",
+      "vulnerabilityName": "Zyxel GS1900 Series Switches Stack-Based Buffer Overflow Vulnerability",
+      "dateAdded": "2026-09-21",
+      "dueDate": "2026-09-24",
+      "shortDescription": "Zyxel GS1900 series switches contain a stack-based buffer overflow vulnerability in the CGI program which could allow a LAN-based, unauthenticated attacker to exploit the flaw and potentially execute OS commands via a crafted HTTP request.",
+      "knownRansomwareCampaignUse": "Unknown"
+    },
     {
       "cveID": "CVE-2025-39964",
       "vendorProject": "Linux",
@@ -187,16 +197,6 @@
       "dateAdded": "2026-09-09",
       "dueDate": "2026-09-12",
       "shortDescription": "Citrix NetScaler ADC and NetScaler Gateway contain an authentication-bypass vulnerability involving an alternate path or channel. When the NetScaler appliance is configured as an AAA virtual server or as a Gateway (SSL VPN, ICA Proxy, CVPN, or RDP Proxy), an unauthenticated remote threat actor may be able to bypass authentication.",
-      "knownRansomwareCampaignUse": "Unknown"
-    },
-    {
-      "cveID": "CVE-2025-25249",
-      "vendorProject": "Fortinet",
-      "product": "Multiple Products",
-      "vulnerabilityName": "Fortinet Multiple Products Heap-based Buffer Overflow Vulnerability",
-      "dateAdded": "2026-09-09",
-      "dueDate": "2026-09-12",
-      "shortDescription": "Fortinet FortiOS, FortiSwitchManager, and FortiSASE contain a heap-based buffer overflow vulnerability that allows an attacker to execute unauthorized code or commands via specially crafted packets.",
       "knownRansomwareCampaignUse": "Unknown"
     }
   ]
