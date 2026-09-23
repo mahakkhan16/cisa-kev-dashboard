@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-09-22T15:52:26.792234+00:00",
-  "catalogVersion": "2026.09.21",
-  "dateReleased": "2026-09-21T18:46:35.0873Z",
-  "totalCount": 1717,
-  "addedLast30Days": 43,
-  "ransomwareLinkedCount": 360,
-  "overdueCount": 1711,
+  "generatedAt": "2026-09-23T15:41:57.625222+00:00",
+  "catalogVersion": "2026.09.23",
+  "dateReleased": "2026-09-23T12:51:35.821Z",
+  "totalCount": 1721,
+  "addedLast30Days": 47,
+  "ransomwareLinkedCount": 361,
+  "overdueCount": 1713,
   "topVendors": [
     {
       "vendor": "Microsoft",
@@ -49,6 +49,46 @@
     }
   ],
   "recentEntries": [
+    {
+      "cveID": "CVE-2026-93952",
+      "vendorProject": "Arista",
+      "product": "VeloCloud Orchestrator",
+      "vulnerabilityName": "Arista VeloCloud Orchestrator Improper Input Validation Vulnerability",
+      "dateAdded": "2026-09-22",
+      "dueDate": "2026-09-25",
+      "shortDescription": "Arista VeloCloud Orchestrator (VCO) on-prem contains an improper input validation vulnerability that may allow a remote attacker to access privileged internal functionality and impact the VCO host. Successful exploitation may compromise the confidentiality, integrity, and availability of the orchestrator and data managed by the orchestrator.",
+      "knownRansomwareCampaignUse": "Unknown"
+    },
+    {
+      "cveID": "CVE-2026-94127",
+      "vendorProject": "F5",
+      "product": "BIG-IP APM",
+      "vulnerabilityName": "F5 BIG-IP APM Heap-based Buffer Overflow Vulnerability",
+      "dateAdded": "2026-09-22",
+      "dueDate": "2026-09-25",
+      "shortDescription": "F5 BIG-IP APM contains a heap-based buffer overflow vulnerability when access policy and an OAuth profile are configured on a virtual server. This vulnerability could allow an unauthenticated attacker to perform remote code execution.",
+      "knownRansomwareCampaignUse": "Unknown"
+    },
+    {
+      "cveID": "CVE-2026-93616",
+      "vendorProject": "Check Point",
+      "product": "Multiple Products",
+      "vulnerabilityName": "Check Point Multiple Products Path Traversal Vulnerability",
+      "dateAdded": "2026-09-22",
+      "dueDate": "2026-09-25",
+      "shortDescription": "Check Point Security Management Server, Multi-Domain Security Management Server, Log Server, Multi-Domain Log Server, and SmartEvent contain a path traversal vulnerability that allows an unauthenticated attacker to upload and execute arbitrary scripts.",
+      "knownRansomwareCampaignUse": "Unknown"
+    },
+    {
+      "cveID": "CVE-2026-85102",
+      "vendorProject": "Check Point",
+      "product": "Multiple Products",
+      "vulnerabilityName": "Check Point Multiple Products Improper Certificate Validation Vulnerability",
+      "dateAdded": "2026-09-22",
+      "dueDate": "2026-09-25",
+      "shortDescription": "Check Point Security Gateway and Check Point Spark Firewall using Site to Site VPN or Remote Access VPN contain an improper certificate validation vulnerability which could allow an unauthenticated remote attacker to execute arbitrary code on the Gateway.",
+      "knownRansomwareCampaignUse": "Unknown"
+    },
     {
       "cveID": "CVE-2026-7273",
       "vendorProject": "Zyxel",
@@ -157,46 +197,6 @@
       "dateAdded": "2026-09-11",
       "dueDate": "2026-09-25",
       "shortDescription": "JFrog Artifactory contains an improper authentication vulnerability that could return an internal anonymous-user token to an unauthenticated caller when anonymous access is disabled, potentially exposing sensitive resources.",
-      "knownRansomwareCampaignUse": "Unknown"
-    },
-    {
-      "cveID": "CVE-2026-85706",
-      "vendorProject": "GitLab",
-      "product": "Community Edition and Enterprise Edition",
-      "vulnerabilityName": "GitLab Community Edition and Enterprise Edition Path Traversal Vulnerability",
-      "dateAdded": "2026-09-11",
-      "dueDate": "2026-09-14",
-      "shortDescription": "GitLab Community Edition and Enterprise Edition contains a path traversal vulnerability that allows an unauthenticated user to read arbitrary files due to an improper path confinement and missing authentication enforcement in the repository commits API.",
-      "knownRansomwareCampaignUse": "Unknown"
-    },
-    {
-      "cveID": "CVE-2026-86060",
-      "vendorProject": "MikroTik",
-      "product": "RouterOS",
-      "vulnerabilityName": "MikroTik RouterOS Improper Neutralization of Argument Delimiters in a Command Vulnerability",
-      "dateAdded": "2026-09-10",
-      "dueDate": "2026-09-13",
-      "shortDescription": "MikroTik RouterOS contains an improper neutralization of argument delimiters in a command vulnerability which allows an attacker to change the trusted RouterOS policy mask, leading to privilege escalation.",
-      "knownRansomwareCampaignUse": "Unknown"
-    },
-    {
-      "cveID": "CVE-2026-67277",
-      "vendorProject": "MikroTik",
-      "product": "RouterOS",
-      "vulnerabilityName": "MikroTik RouterOS Missing Authentication for Critical Function Vulnerability",
-      "dateAdded": "2026-09-10",
-      "dueDate": "2026-09-13",
-      "shortDescription": "MikroTik RouterOS contains a missing authentication for critical function vulnerability which allows kernel memory disclosure and denial of service in the btest service.",
-      "knownRansomwareCampaignUse": "Unknown"
-    },
-    {
-      "cveID": "CVE-2026-19490",
-      "vendorProject": "Citrix",
-      "product": "NetScaler",
-      "vulnerabilityName": "Citrix NetScaler Authentication Bypass Using an Alternate Path or Channel Vulnerability",
-      "dateAdded": "2026-09-09",
-      "dueDate": "2026-09-12",
-      "shortDescription": "Citrix NetScaler ADC and NetScaler Gateway contain an authentication-bypass vulnerability involving an alternate path or channel. When the NetScaler appliance is configured as an AAA virtual server or as a Gateway (SSL VPN, ICA Proxy, CVPN, or RDP Proxy), an unauthenticated remote threat actor may be able to bypass authentication.",
       "knownRansomwareCampaignUse": "Unknown"
     }
   ]
