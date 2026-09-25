@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-09-24T16:03:07.970854+00:00",
-  "catalogVersion": "2026.09.23",
-  "dateReleased": "2026-09-23T12:51:35.821Z",
-  "totalCount": 1721,
-  "addedLast30Days": 46,
+  "generatedAt": "2026-09-25T16:03:34.611968+00:00",
+  "catalogVersion": "2026.09.25",
+  "dateReleased": "2026-09-25T14:39:25.3654Z",
+  "totalCount": 1725,
+  "addedLast30Days": 49,
   "ransomwareLinkedCount": 361,
-  "overdueCount": 1714,
+  "overdueCount": 1715,
   "topVendors": [
     {
       "vendor": "Microsoft",
-      "count": 388
+      "count": 389
     },
     {
       "vendor": "Cisco",
@@ -21,7 +21,7 @@
     },
     {
       "vendor": "Adobe",
-      "count": 81
+      "count": 82
     },
     {
       "vendor": "Google",
@@ -49,6 +49,46 @@
     }
   ],
   "recentEntries": [
+    {
+      "cveID": "CVE-2026-67279",
+      "vendorProject": "MikroTik",
+      "product": "RouterOS",
+      "vulnerabilityName": "Mikrotik RouterOS Improper Enforcement of Behavioral Workflow Vulnerability",
+      "dateAdded": "2026-09-25",
+      "dueDate": "2026-09-28",
+      "shortDescription": "Mikrotik RouterOS contains an improper enforcement of behavioral workflow vulnerability that could allow an unauthenticated client to open a session channel and send an exec request. This vulnerability can be chained to achieve unauthenticated exploitation of CVE-2026-86060.",
+      "knownRansomwareCampaignUse": "Unknown"
+    },
+    {
+      "cveID": "CVE-2026-65660",
+      "vendorProject": "Microsoft",
+      "product": "SharePoint",
+      "vulnerabilityName": "Microsoft SharePoint Code Injection Vulnerability",
+      "dateAdded": "2026-09-25",
+      "dueDate": "2026-09-28",
+      "shortDescription": "Microsoft SharePoint contains a code injection vulnerability which could allow an authorized attacker to execute code over a network.",
+      "knownRansomwareCampaignUse": "Unknown"
+    },
+    {
+      "cveID": "CVE-2026-5430",
+      "vendorProject": "WSO2",
+      "product": "Multiple Products",
+      "vulnerabilityName": "WSO2 Multiple Products Path Traversal Vulnerability ",
+      "dateAdded": "2026-09-24",
+      "dueDate": "2026-09-27",
+      "shortDescription": "WSO2 API Control Plane, API Manager, Traffic Manager & Universal Gateway contain a path traversal vulnerability that could allow for unrestricted file upload and lead to remote code execution. ",
+      "knownRansomwareCampaignUse": "Unknown"
+    },
+    {
+      "cveID": "CVE-2026-71362",
+      "vendorProject": "Adobe",
+      "product": "Commerce and Magento ",
+      "vulnerabilityName": "Adobe Commerce and Magento Incorrect Authorization Vulnerability ",
+      "dateAdded": "2026-09-24",
+      "dueDate": "2026-09-27",
+      "shortDescription": "Adobe Commerce and Magento contains an incorrect authorization vulnerability that could allow an attacker to leverage this vulnerability to gain elevated access to sensitive resources without any user interaction. ",
+      "knownRansomwareCampaignUse": "Unknown"
+    },
     {
       "cveID": "CVE-2026-93952",
       "vendorProject": "Arista",
@@ -157,46 +197,6 @@
       "dateAdded": "2026-09-16",
       "dueDate": "2026-09-19",
       "shortDescription": "Acronis Backup plugin for cPanel & WHM and extension for Plesk contains an incorrect default permissions vulnerability that could allow for privilege escalation.",
-      "knownRansomwareCampaignUse": "Unknown"
-    },
-    {
-      "cveID": "CVE-2026-76461",
-      "vendorProject": "Cisco",
-      "product": "Secure Email Gateway",
-      "vulnerabilityName": "Cisco Secure Email Gateway SQL Injection Vulnerability",
-      "dateAdded": "2026-09-14",
-      "dueDate": "2026-09-17",
-      "shortDescription": "Cisco AsyncOS software for Cisco Secure Email Gateway (SEG) contains a SQL injection vulnerability that could allow an unauthenticated, remote attacker to execute arbitrary commands with root privileges on the underlying operating system.",
-      "knownRansomwareCampaignUse": "Unknown"
-    },
-    {
-      "cveID": "CVE-2026-84869",
-      "vendorProject": "ConnectWise",
-      "product": "ScreenConnect",
-      "vulnerabilityName": "ConnectWise ScreenConnect Improper Privilege Management and Missing Authorization Vulnerability",
-      "dateAdded": "2026-09-11",
-      "dueDate": "2026-09-14",
-      "shortDescription": "ConnectWise ScreenConnect contains both an improper privilege management and missing authorization vulnerability that may allow an attacker to transfer and execute files through an active remote session without authorization or host confirmation.",
-      "knownRansomwareCampaignUse": "Unknown"
-    },
-    {
-      "cveID": "CVE-2026-42016",
-      "vendorProject": "JFrog",
-      "product": "Artifactory",
-      "vulnerabilityName": "JFrog Artifactory Incorrect Authorization Vulnerability",
-      "dateAdded": "2026-09-11",
-      "dueDate": "2026-09-25",
-      "shortDescription": "JFrog Artifactory contains an incorrect authorization vulnerability that leads to a privilege escalation attack due to a validation check of the token signature/issuer and not the token\u2019s scope.",
-      "knownRansomwareCampaignUse": "Unknown"
-    },
-    {
-      "cveID": "CVE-2026-42018",
-      "vendorProject": "JFrog",
-      "product": "Artifactory",
-      "vulnerabilityName": "JFrog Artifactory Improper Authentication Vulnerability",
-      "dateAdded": "2026-09-11",
-      "dueDate": "2026-09-25",
-      "shortDescription": "JFrog Artifactory contains an improper authentication vulnerability that could return an internal anonymous-user token to an unauthenticated caller when anonymous access is disabled, potentially exposing sensitive resources.",
       "knownRansomwareCampaignUse": "Unknown"
     }
   ]
