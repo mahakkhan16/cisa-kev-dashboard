@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-09-25T16:03:34.611968+00:00",
+  "generatedAt": "2026-09-26T15:16:33.662832+00:00",
   "catalogVersion": "2026.09.25",
-  "dateReleased": "2026-09-25T14:39:25.3654Z",
-  "totalCount": 1725,
-  "addedLast30Days": 49,
+  "dateReleased": "2026-09-25T18:58:16.5029Z",
+  "totalCount": 1726,
+  "addedLast30Days": 44,
   "ransomwareLinkedCount": 361,
-  "overdueCount": 1715,
+  "overdueCount": 1721,
   "topVendors": [
     {
       "vendor": "Microsoft",
@@ -67,6 +67,16 @@
       "dateAdded": "2026-09-25",
       "dueDate": "2026-09-28",
       "shortDescription": "Microsoft SharePoint contains a code injection vulnerability which could allow an authorized attacker to execute code over a network.",
+      "knownRansomwareCampaignUse": "Unknown"
+    },
+    {
+      "cveID": "CVE-2026-87902",
+      "vendorProject": "WordPress",
+      "product": "Core",
+      "vulnerabilityName": "WordPress Core Remote File Inclusion Vulnerability",
+      "dateAdded": "2026-09-25",
+      "dueDate": "2026-09-28",
+      "shortDescription": "WordPress Core contains a remote file inclusion vulnerability which could allow an unauthenticated attacker to make page-template resolution include a chosen readable local `.php` file outside the active theme directories, leading to remote code execution.",
       "knownRansomwareCampaignUse": "Unknown"
     },
     {
@@ -187,16 +197,6 @@
       "dateAdded": "2026-09-16",
       "dueDate": "2026-09-19",
       "shortDescription": "Cisco Identity Services Engine (ISE) and Cisco ISE Passive Identity Connector (ISE-PIC) contain an incorrect use of privileged APIs vulnerability that could allow an unauthenticated, remote attacker to gain unauthorized access to the affected device by bypassing the web-based management interface.",
-      "knownRansomwareCampaignUse": "Unknown"
-    },
-    {
-      "cveID": "CVE-2026-87886",
-      "vendorProject": "Acronis",
-      "product": "Backup",
-      "vulnerabilityName": "Acronis Backup Incorrect Default Permissions Vulnerability",
-      "dateAdded": "2026-09-16",
-      "dueDate": "2026-09-19",
-      "shortDescription": "Acronis Backup plugin for cPanel & WHM and extension for Plesk contains an incorrect default permissions vulnerability that could allow for privilege escalation.",
       "knownRansomwareCampaignUse": "Unknown"
     }
   ]
