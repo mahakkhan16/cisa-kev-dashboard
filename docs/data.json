@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-09-27T15:56:01.430320+00:00",
-  "catalogVersion": "2026.09.25",
-  "dateReleased": "2026-09-25T18:58:16.5029Z",
-  "totalCount": 1726,
-  "addedLast30Days": 41,
+  "generatedAt": "2026-09-28T18:52:34.757718+00:00",
+  "catalogVersion": "2026.09.27",
+  "dateReleased": "2026-09-27T21:30:35.5521Z",
+  "totalCount": 1728,
+  "addedLast30Days": 43,
   "ransomwareLinkedCount": 361,
-  "overdueCount": 1721,
+  "overdueCount": 1723,
   "topVendors": [
     {
       "vendor": "Microsoft",
@@ -49,6 +49,26 @@
     }
   ],
   "recentEntries": [
+    {
+      "cveID": "CVE-2026-88772",
+      "vendorProject": "Citrix",
+      "product": "NetScaler",
+      "vulnerabilityName": "Citrix NetScaler Improper Restriction of Operations within the Bounds of a Memory Buffer Vulnerability",
+      "dateAdded": "2026-09-27",
+      "dueDate": "2026-09-30",
+      "shortDescription": "Citrix NetScaler ADC and NetScaler Gateway contain an improper restriction of operations within the bounds of a memory buffer vulnerability that could allow for remote code execution or denial of service",
+      "knownRansomwareCampaignUse": "Unknown"
+    },
+    {
+      "cveID": "CVE-2026-88771",
+      "vendorProject": "Citrix",
+      "product": "NetScaler",
+      "vulnerabilityName": "Citrix NetScaler Improper Input Validation Vulnerability",
+      "dateAdded": "2026-09-27",
+      "dueDate": "2026-09-30",
+      "shortDescription": "Citrix NetScaler ADC and NetScaler Gateway contain an improper input validation vulnerability that could allow an unauthenticated attacker to execute arbitrary commands.",
+      "knownRansomwareCampaignUse": "Unknown"
+    },
     {
       "cveID": "CVE-2026-67279",
       "vendorProject": "MikroTik",
@@ -177,26 +197,6 @@
       "dateAdded": "2026-09-18",
       "dueDate": "2026-09-21",
       "shortDescription": "Linux Kernel contains an improper check for unusual or exceptional conditions vulnerability in the TLS receive path which allows a zero-length record retrieved from the rx_list to bypass the intended recvmsg() record-type handling, potentially causing subsequent TLS records to be processed using incorrect zero-copy and queuing assumptions. The impacted product(s) could be end-of-life (EoL) and/or end-of-service (EoS). Users are advised to discontinue use and/or transition to a supported version.",
-      "knownRansomwareCampaignUse": "Unknown"
-    },
-    {
-      "cveID": "CVE-2026-58704",
-      "vendorProject": "Google",
-      "product": "Pixel",
-      "vulnerabilityName": "Google Pixel Improper Authorization Vulnerability",
-      "dateAdded": "2026-09-16",
-      "dueDate": "2026-09-19",
-      "shortDescription": "Google Pixel devices contain an improper authorization vulnerability in the cellular modem. A logic error may allow an attacker to bypass permission checks and escalate privileges.",
-      "knownRansomwareCampaignUse": "Unknown"
-    },
-    {
-      "cveID": "CVE-2026-76460",
-      "vendorProject": "Cisco",
-      "product": "Identity Services Engine",
-      "vulnerabilityName": "Cisco Identity Services Engine Incorrect Use of Privileged APIs Vulnerability",
-      "dateAdded": "2026-09-16",
-      "dueDate": "2026-09-19",
-      "shortDescription": "Cisco Identity Services Engine (ISE) and Cisco ISE Passive Identity Connector (ISE-PIC) contain an incorrect use of privileged APIs vulnerability that could allow an unauthenticated, remote attacker to gain unauthorized access to the affected device by bypassing the web-based management interface.",
       "knownRansomwareCampaignUse": "Unknown"
     }
   ]
