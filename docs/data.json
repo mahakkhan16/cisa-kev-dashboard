@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-09-29T17:10:25.280281+00:00",
-  "catalogVersion": "2026.09.29",
-  "dateReleased": "2026-09-29T13:51:33.3852Z",
-  "totalCount": 1729,
-  "addedLast30Days": 44,
+  "generatedAt": "2026-09-30T17:08:13.393759+00:00",
+  "catalogVersion": "2026.09.30",
+  "dateReleased": "2026-09-30T16:59:23.0688Z",
+  "totalCount": 1730,
+  "addedLast30Days": 45,
   "ransomwareLinkedCount": 361,
   "overdueCount": 1726,
   "topVendors": [
@@ -13,7 +13,7 @@
     },
     {
       "vendor": "Cisco",
-      "count": 99
+      "count": 100
     },
     {
       "vendor": "Apple",
@@ -49,6 +49,16 @@
     }
   ],
   "recentEntries": [
+    {
+      "cveID": "CVE-2026-76504",
+      "vendorProject": "Cisco",
+      "product": "Catalyst SD-WAN Manager",
+      "vulnerabilityName": "Cisco Catalyst SD-WAN Manager Hex Encoding Vulnerability",
+      "dateAdded": "2026-09-30",
+      "dueDate": "2026-10-03",
+      "shortDescription": "Cisco Catalyst SD-WAN Manager contains a hex encoding vulnerability that could allow an unauthenticated, remote attacker to access an affected system with privileges of the admin user due to improper handling of URI encoding in an HTTP request.",
+      "knownRansomwareCampaignUse": "Unknown"
+    },
     {
       "cveID": "CVE-2026-86950",
       "vendorProject": "Apple",
@@ -187,16 +197,6 @@
       "dateAdded": "2026-09-18",
       "dueDate": "2026-09-21",
       "shortDescription": "Linux Kernel contains a race condition vulnerability which allows concurrent writes to the same AF_ALG socket causing data to be unpredictably interleaved and creating inconsistencies in the socket's internal state.",
-      "knownRansomwareCampaignUse": "Unknown"
-    },
-    {
-      "cveID": "CVE-2026-53266",
-      "vendorProject": "Linux",
-      "product": "Kernel",
-      "vulnerabilityName": "Linux Kernel Out-of-Bounds Write Vulnerability",
-      "dateAdded": "2026-09-18",
-      "dueDate": "2026-09-21",
-      "shortDescription": "Linux Kernel contains an out-of-bounds write vulnerability in the ebtables SNAT target which allows an ARP sender hardware address rewrite to write directly into a nonlinear socket-buffer fragment backed by a splice-imported file page. The impacted product(s) could be end-of-life (EoL) and/or end-of-service (EoS). Users are advised to discontinue use and/or transition to a supported version.",
       "knownRansomwareCampaignUse": "Unknown"
     }
   ]
