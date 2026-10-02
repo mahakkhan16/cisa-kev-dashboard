@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-01T17:38:05.519115+00:00",
-  "catalogVersion": "2026.09.30",
-  "dateReleased": "2026-09-30T16:59:23.0688Z",
-  "totalCount": 1730,
-  "addedLast30Days": 43,
+  "generatedAt": "2026-10-02T16:57:21.709182+00:00",
+  "catalogVersion": "2026.10.02",
+  "dateReleased": "2026-10-02T15:19:38.2945Z",
+  "totalCount": 1733,
+  "addedLast30Days": 46,
   "ransomwareLinkedCount": 361,
   "overdueCount": 1728,
   "topVendors": [
@@ -40,15 +40,45 @@
       "count": 35
     },
     {
-      "vendor": "Linux",
+      "vendor": "Fortinet",
       "count": 31
     },
     {
-      "vendor": "Fortinet",
-      "count": 30
+      "vendor": "Linux",
+      "count": 31
     }
   ],
   "recentEntries": [
+    {
+      "cveID": "CVE-2026-102490",
+      "vendorProject": "Zammad GmbH",
+      "product": "Zammad",
+      "vulnerabilityName": "Zammad GmbH Zammad Improper Privilege Management Vulnerability",
+      "dateAdded": "2026-10-02",
+      "dueDate": "2026-10-05",
+      "shortDescription": "Zammad GmbH Zammad contains an improper privilege management vulnerability that can allow the local zammad user to escalate privileges to root. This vulnerability can be chained with CVE-2026-102489.",
+      "knownRansomwareCampaignUse": "Unknown"
+    },
+    {
+      "cveID": "CVE-2026-102489",
+      "vendorProject": "Zammad GmbH",
+      "product": "Zammad",
+      "vulnerabilityName": "Zammad GmbH Zammad Session Fixation Vulnerability",
+      "dateAdded": "2026-10-02",
+      "dueDate": "2026-10-05",
+      "shortDescription": "Zammad GmbH Zammad contains a session fixation vulnerability that can lead to remote code execution as the zammad user. This vulnerability can be chained with CVE-2026-102490.",
+      "knownRansomwareCampaignUse": "Unknown"
+    },
+    {
+      "cveID": "CVE-2026-104286",
+      "vendorProject": "Fortinet",
+      "product": "FortiMail",
+      "vulnerabilityName": "Fortinet FortiMail Path Traversal Vulnerability",
+      "dateAdded": "2026-10-01",
+      "dueDate": "2026-10-04",
+      "shortDescription": "Fortinet FortiMail contains a path traversal and an improper neutralization of NULL byte or NULL character vulnerability that may allow an unauthenticated attacker to write arbitrary files on the underlying system via crafted HTTP or HTTPS requests.",
+      "knownRansomwareCampaignUse": "Unknown"
+    },
     {
       "cveID": "CVE-2026-76504",
       "vendorProject": "Cisco",
@@ -167,36 +197,6 @@
       "dateAdded": "2026-09-22",
       "dueDate": "2026-09-25",
       "shortDescription": "Check Point Security Management Server, Multi-Domain Security Management Server, Log Server, Multi-Domain Log Server, and SmartEvent contain a path traversal vulnerability that allows an unauthenticated attacker to upload and execute arbitrary scripts.",
-      "knownRansomwareCampaignUse": "Unknown"
-    },
-    {
-      "cveID": "CVE-2026-85102",
-      "vendorProject": "Check Point",
-      "product": "Multiple Products",
-      "vulnerabilityName": "Check Point Multiple Products Improper Certificate Validation Vulnerability",
-      "dateAdded": "2026-09-22",
-      "dueDate": "2026-09-25",
-      "shortDescription": "Check Point Security Gateway and Check Point Spark Firewall using Site to Site VPN or Remote Access VPN contain an improper certificate validation vulnerability which could allow an unauthenticated remote attacker to execute arbitrary code on the Gateway.",
-      "knownRansomwareCampaignUse": "Unknown"
-    },
-    {
-      "cveID": "CVE-2026-7273",
-      "vendorProject": "Zyxel",
-      "product": "GS1900 Series Switches",
-      "vulnerabilityName": "Zyxel GS1900 Series Switches Stack-Based Buffer Overflow Vulnerability",
-      "dateAdded": "2026-09-21",
-      "dueDate": "2026-09-24",
-      "shortDescription": "Zyxel GS1900 series switches contain a stack-based buffer overflow vulnerability in the CGI program which could allow a LAN-based, unauthenticated attacker to exploit the flaw and potentially execute OS commands via a crafted HTTP request.",
-      "knownRansomwareCampaignUse": "Unknown"
-    },
-    {
-      "cveID": "CVE-2025-39964",
-      "vendorProject": "Linux",
-      "product": "Kernel",
-      "vulnerabilityName": "Linux Kernel Race Condition Vulnerability",
-      "dateAdded": "2026-09-18",
-      "dueDate": "2026-09-21",
-      "shortDescription": "Linux Kernel contains a race condition vulnerability which allows concurrent writes to the same AF_ALG socket causing data to be unpredictably interleaved and creating inconsistencies in the socket's internal state.",
       "knownRansomwareCampaignUse": "Unknown"
     }
   ]
