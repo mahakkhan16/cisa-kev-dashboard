@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-10-04T16:05:02.915497+00:00",
-  "catalogVersion": "2026.10.02",
-  "dateReleased": "2026-10-02T15:19:38.2945Z",
-  "totalCount": 1733,
+  "generatedAt": "2026-10-06T17:31:39.898712+00:00",
+  "catalogVersion": "2026.10.04",
+  "dateReleased": "2026-10-04T18:52:56.0635Z",
+  "totalCount": 1734,
   "addedLast30Days": 39,
   "ransomwareLinkedCount": 361,
-  "overdueCount": 1730,
+  "overdueCount": 1733,
   "topVendors": [
     {
       "vendor": "Microsoft",
@@ -49,6 +49,16 @@
     }
   ],
   "recentEntries": [
+    {
+      "cveID": "CVE-2026-88779",
+      "vendorProject": "Citrix",
+      "product": "NetScaler",
+      "vulnerabilityName": "Citrix NetScaler Improper Restriction of Operations within the Bounds of a Memory Buffer Vulnerability",
+      "dateAdded": "2026-10-04",
+      "dueDate": "2026-10-07",
+      "shortDescription": "Citrix NetScaler ADC (formerly Citrix ADC) and Citrix NetScaler Gateway (formerly Citrix Gateway) contain an improper restriction of operations within the bounds of a memory buffer vulnerability that could allow for a denial of service.",
+      "knownRansomwareCampaignUse": "Unknown"
+    },
     {
       "cveID": "CVE-2026-102490",
       "vendorProject": "Zammad GmbH",
@@ -187,16 +197,6 @@
       "dateAdded": "2026-09-22",
       "dueDate": "2026-09-25",
       "shortDescription": "F5 BIG-IP APM contains a heap-based buffer overflow vulnerability when access policy and an OAuth profile are configured on a virtual server. This vulnerability could allow an unauthenticated attacker to perform remote code execution.",
-      "knownRansomwareCampaignUse": "Unknown"
-    },
-    {
-      "cveID": "CVE-2026-93616",
-      "vendorProject": "Check Point",
-      "product": "Multiple Products",
-      "vulnerabilityName": "Check Point Multiple Products Path Traversal Vulnerability",
-      "dateAdded": "2026-09-22",
-      "dueDate": "2026-09-25",
-      "shortDescription": "Check Point Security Management Server, Multi-Domain Security Management Server, Log Server, Multi-Domain Log Server, and SmartEvent contain a path traversal vulnerability that allows an unauthenticated attacker to upload and execute arbitrary scripts.",
       "knownRansomwareCampaignUse": "Unknown"
     }
   ]
