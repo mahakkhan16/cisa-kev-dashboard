@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-10-08T18:05:55.271642+00:00",
+  "generatedAt": "2026-10-09T17:39:09.912400+00:00",
   "catalogVersion": "2026.10.08",
-  "dateReleased": "2026-10-08T17:20:54.304Z",
+  "dateReleased": "2026-10-08T20:09:18.9833Z",
   "totalCount": 1739,
-  "addedLast30Days": 44,
+  "addedLast30Days": 40,
   "ransomwareLinkedCount": 361,
-  "overdueCount": 1734,
+  "overdueCount": 1733,
   "topVendors": [
     {
       "vendor": "Microsoft",
@@ -155,7 +155,7 @@
       "product": "Multiple Products",
       "vulnerabilityName": "Apple Multiple Products Out-of-Bounds Write Vulnerability",
       "dateAdded": "2026-09-29",
-      "dueDate": "2026-10-02",
+      "dueDate": "2026-10-13",
       "shortDescription": "Apple iOS, macOS, and iPadOS contain an out-of-bounds write vulnerability in CoreGraphics that may lead to arbitrary code execution.",
       "knownRansomwareCampaignUse": "Unknown"
     },
