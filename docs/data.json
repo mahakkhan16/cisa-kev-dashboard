@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-12T20:31:51.874505+00:00",
-  "catalogVersion": "2026.10.08",
-  "dateReleased": "2026-10-08T20:09:18.9833Z",
-  "totalCount": 1739,
-  "addedLast30Days": 30,
+  "generatedAt": "2026-10-13T18:36:48.097188+00:00",
+  "catalogVersion": "2026.10.13",
+  "dateReleased": "2026-10-13T16:36:26.1679Z",
+  "totalCount": 1740,
+  "addedLast30Days": 31,
   "ransomwareLinkedCount": 361,
   "overdueCount": 1738,
   "topVendors": [
@@ -37,7 +37,7 @@
     },
     {
       "vendor": "Ivanti",
-      "count": 35
+      "count": 36
     },
     {
       "vendor": "Fortinet",
@@ -49,6 +49,16 @@
     }
   ],
   "recentEntries": [
+    {
+      "cveID": "CVE-2026-104935",
+      "vendorProject": "Ivanti",
+      "product": "Connect Secure",
+      "vulnerabilityName": "Ivanti Connect Secure Authentication Bypass by Spoofing Vulnerability",
+      "dateAdded": "2026-10-13",
+      "dueDate": "2026-10-16",
+      "shortDescription": "Ivanti Connect Secure contains an authentication bypass by spoofing vulnerability that allows a remote unauthenticated attacker to execute arbitrary commands.",
+      "knownRansomwareCampaignUse": "Unknown"
+    },
     {
       "cveID": "CVE-2015-5477",
       "vendorProject": "ISC",
@@ -187,16 +197,6 @@
       "dateAdded": "2026-09-25",
       "dueDate": "2026-09-28",
       "shortDescription": "Mikrotik RouterOS contains an improper enforcement of behavioral workflow vulnerability that could allow an unauthenticated client to open a session channel and send an exec request. This vulnerability can be chained to achieve unauthenticated exploitation of CVE-2026-86060.",
-      "knownRansomwareCampaignUse": "Unknown"
-    },
-    {
-      "cveID": "CVE-2026-65660",
-      "vendorProject": "Microsoft",
-      "product": "SharePoint",
-      "vulnerabilityName": "Microsoft SharePoint Code Injection Vulnerability",
-      "dateAdded": "2026-09-25",
-      "dueDate": "2026-09-28",
-      "shortDescription": "Microsoft SharePoint contains a code injection vulnerability which could allow an authorized attacker to execute code over a network.",
       "knownRansomwareCampaignUse": "Unknown"
     }
   ]
