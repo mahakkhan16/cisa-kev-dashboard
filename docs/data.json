@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-27T16:58:38.490254+00:00",
-  "catalogVersion": "2026.10.26",
-  "dateReleased": "2026-10-26T22:24:24.6101Z",
-  "totalCount": 1758,
+  "generatedAt": "2026-10-28T17:33:01.250090+00:00",
+  "catalogVersion": "2026.10.27",
+  "dateReleased": "2026-10-27T19:00:02.2307Z",
+  "totalCount": 1760,
   "addedLast30Days": 32,
   "ransomwareLinkedCount": 361,
   "overdueCount": 1753,
@@ -21,11 +21,11 @@
     },
     {
       "vendor": "Adobe",
-      "count": 82
+      "count": 83
     },
     {
       "vendor": "Google",
-      "count": 75
+      "count": 76
     },
     {
       "vendor": "Oracle",
@@ -49,6 +49,26 @@
     }
   ],
   "recentEntries": [
+    {
+      "cveID": "CVE-2026-48356",
+      "vendorProject": "Adobe",
+      "product": "Commerce and Magento",
+      "vulnerabilityName": "Adobe Commerce and Magento Unrestricted Upload of File with Dangerous Type Vulnerability",
+      "dateAdded": "2026-10-27",
+      "dueDate": "2026-11-10",
+      "shortDescription": "Adobe Commerce and Magento contain an unrestricted upload of file with dangerous type vulnerability that could result in arbitrary code execution in the context of the current user, potentially gaining elevated access or control over the victim's account or session.",
+      "knownRansomwareCampaignUse": "Unknown"
+    },
+    {
+      "cveID": "CVE-2026-111497",
+      "vendorProject": "Google",
+      "product": "Brotli",
+      "vulnerabilityName": "Google Brotli Unchecked Return Value Vulnerability",
+      "dateAdded": "2026-10-27",
+      "dueDate": "2026-11-10",
+      "shortDescription": "Google Brotli contains an unchecked return value vulnerability that allows a remote unauthenticated attacker to corrupt adjacent decoder state memory, disclose sensitive memory contents, cause a denial of service, or potentially execute arbitrary code using a crafted Brotli-compressed stream.",
+      "knownRansomwareCampaignUse": "Unknown"
+    },
     {
       "cveID": "CVE-2026-109618",
       "vendorProject": "PHP Group",
@@ -177,26 +197,6 @@
       "dateAdded": "2026-10-15",
       "dueDate": "2026-10-18",
       "shortDescription": "Multiple Atlassian products (Bitbucket Data Center ,Confluence Data Center, Jira Service Management Data Center, Jira Software Data Center, Bamboo Data Center, Crowd Data Center, Crucible and Fisheye) contain a files or directories accessible to external parties vulnerability which could allow an unauthenticated attacker to access specific files within the web application root directory in affected versions.",
-      "knownRansomwareCampaignUse": "Unknown"
-    },
-    {
-      "cveID": "CVE-2026-105134",
-      "vendorProject": "Ahsay",
-      "product": "AhsayCBS",
-      "vulnerabilityName": "Ahsay AhsayCBS Command Injection Vulnerability",
-      "dateAdded": "2026-10-14",
-      "dueDate": "2026-10-17",
-      "shortDescription": "Ahsay AhsayCBS contains a command injection vulnerability that could allow a remote attacker to execute operating system commands via manipulation of the random parameter in the Replication Receiver component\u2019s /rps/api/json/UpdateReceivers.do endpoint. This vulnerability can be chained with CVE-2026-105133.",
-      "knownRansomwareCampaignUse": "Unknown"
-    },
-    {
-      "cveID": "CVE-2026-76519",
-      "vendorProject": "Cisco",
-      "product": "Secure Email Gateway",
-      "vulnerabilityName": "Cisco Secure Email Gateway Relative Path Traversal Vulnerability",
-      "dateAdded": "2026-10-14",
-      "dueDate": "2026-10-17",
-      "shortDescription": "Cisco Secure Email Gateway contains a relative path traversal vulnerability that could allow an unauthenticated, remote attacker to write arbitrary files on the underlying operating system.",
       "knownRansomwareCampaignUse": "Unknown"
     }
   ]
