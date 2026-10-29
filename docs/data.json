@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-28T17:33:01.250090+00:00",
-  "catalogVersion": "2026.10.27",
-  "dateReleased": "2026-10-27T19:00:02.2307Z",
-  "totalCount": 1760,
-  "addedLast30Days": 32,
+  "generatedAt": "2026-10-29T17:43:04.167772+00:00",
+  "catalogVersion": "2026.10.28",
+  "dateReleased": "2026-10-28T19:00:04.8077Z",
+  "totalCount": 1762,
+  "addedLast30Days": 34,
   "ransomwareLinkedCount": 361,
   "overdueCount": 1753,
   "topVendors": [
@@ -40,15 +40,35 @@
       "count": 36
     },
     {
-      "vendor": "Fortinet",
+      "vendor": "Linux",
       "count": 32
     },
     {
-      "vendor": "Linux",
-      "count": 31
+      "vendor": "Fortinet",
+      "count": 32
     }
   ],
   "recentEntries": [
+    {
+      "cveID": "CVE-2026-41709",
+      "vendorProject": "Broadcom",
+      "product": "VMware ESX",
+      "vulnerabilityName": "Broadcom VMWare ESX Insufficient Logging Vulnerability",
+      "dateAdded": "2026-10-28",
+      "dueDate": "2026-11-11",
+      "shortDescription": "Broadcom VMWare ESX contains an insufficient logging vulnerability that could allow a malicious actor with admin access to perform certain operations without being logged.",
+      "knownRansomwareCampaignUse": "Unknown"
+    },
+    {
+      "cveID": "CVE-2026-46300",
+      "vendorProject": "Linux",
+      "product": "Kernel",
+      "vulnerabilityName": "Linux Kernel Missing Initialization of a Variable Vulnerability",
+      "dateAdded": "2026-10-28",
+      "dueDate": "2026-10-31",
+      "shortDescription": "Linux Kernel contains a missing initialization of a variable vulnerability that could allow for unintended modification of page-cache-backed data via failure to preserve the shared-fragment marker during socket buffer coalescing, causing ESP input processing to decrypt shared fragments in place. This vulnerability can be chained with CVE-2026-109618 and CVE-2026-109619 to implant PHP webshells and run commands as root.",
+      "knownRansomwareCampaignUse": "Unknown"
+    },
     {
       "cveID": "CVE-2026-48356",
       "vendorProject": "Adobe",
@@ -177,26 +197,6 @@
       "dateAdded": "2026-10-16",
       "dueDate": "2026-10-19",
       "shortDescription": "BeyondTrust Remote Support contains an authentication bypass by spoofing vulnerability that could allow a remote attacker to perform file operations on the appliance.",
-      "knownRansomwareCampaignUse": "Unknown"
-    },
-    {
-      "cveID": "CVE-2025-61624",
-      "vendorProject": "Fortinet",
-      "product": "Multiple Products",
-      "vulnerabilityName": "Fortinet Multiple Products Path Traversal Vulnerability",
-      "dateAdded": "2026-10-16",
-      "dueDate": "2026-10-19",
-      "shortDescription": "FortiOS, FortiPAM, FortiProxy, and FortiSwitchManager contain a path traversal vulnerability that may allow an authenticated attacker with admin profile and at least read-write permissions to write or delete arbitrary files via specific CLI commands.",
-      "knownRansomwareCampaignUse": "Unknown"
-    },
-    {
-      "cveID": "CVE-2026-21589",
-      "vendorProject": "Atlassian",
-      "product": "Multiple Products",
-      "vulnerabilityName": "Atlassian Multiple Products Files or Directories Accessible to External Parties Vulnerability",
-      "dateAdded": "2026-10-15",
-      "dueDate": "2026-10-18",
-      "shortDescription": "Multiple Atlassian products (Bitbucket Data Center ,Confluence Data Center, Jira Service Management Data Center, Jira Software Data Center, Bamboo Data Center, Crowd Data Center, Crucible and Fisheye) contain a files or directories accessible to external parties vulnerability which could allow an unauthenticated attacker to access specific files within the web application root directory in affected versions.",
       "knownRansomwareCampaignUse": "Unknown"
     }
   ]
