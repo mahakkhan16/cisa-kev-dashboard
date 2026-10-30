@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-10-29T17:43:04.167772+00:00",
-  "catalogVersion": "2026.10.28",
-  "dateReleased": "2026-10-28T19:00:04.8077Z",
-  "totalCount": 1762,
-  "addedLast30Days": 34,
+  "generatedAt": "2026-10-30T17:22:31.232940+00:00",
+  "catalogVersion": "2026.10.29",
+  "dateReleased": "2026-10-29T19:09:34.4003Z",
+  "totalCount": 1764,
+  "addedLast30Days": 35,
   "ransomwareLinkedCount": 361,
-  "overdueCount": 1753,
+  "overdueCount": 1755,
   "topVendors": [
     {
       "vendor": "Microsoft",
@@ -13,7 +13,7 @@
     },
     {
       "vendor": "Cisco",
-      "count": 101
+      "count": 102
     },
     {
       "vendor": "Apple",
@@ -49,6 +49,26 @@
     }
   ],
   "recentEntries": [
+    {
+      "cveID": "CVE-2026-97229",
+      "vendorProject": "GitLab",
+      "product": "Community Edition and Enterprise Edition",
+      "vulnerabilityName": "GitLab Community Edition and Enterprise Edition Integer Overflow or Wraparound Vulnerability",
+      "dateAdded": "2026-10-29",
+      "dueDate": "2026-11-01",
+      "shortDescription": "GitLab Community Edition and Enterprise Edition contain a integer overflow or wraparound vulnerability that could allow an unauthenticated user to execute arbitrary code on the GitLab server via a specially crafted regular expression in a CI/CD configuration, due to insufficient regular expression validation.",
+      "knownRansomwareCampaignUse": "Unknown"
+    },
+    {
+      "cveID": "CVE-2026-76418",
+      "vendorProject": "Cisco",
+      "product": "Secure Firewall ASA Software and Cisco Secure FTD Software",
+      "vulnerabilityName": "Cisco Secure Firewall ASA Software and Cisco Secure FTD Software Unchecked Return Value to NULL Pointer Dereference Vulnerability",
+      "dateAdded": "2026-10-29",
+      "dueDate": "2026-11-01",
+      "shortDescription": "Cisco Secure Firewall ASA Software and Cisco Secure FTD Software contains an unchecked return value to NULL pointer dereference vulnerability that could allow an unauthenticated, remote attacker to cause the device to reload unexpectedly, resulting in a denial of service (DoS) condition.",
+      "knownRansomwareCampaignUse": "Unknown"
+    },
     {
       "cveID": "CVE-2026-41709",
       "vendorProject": "Broadcom",
@@ -177,26 +197,6 @@
       "dateAdded": "2026-10-20",
       "dueDate": "2026-11-03",
       "shortDescription": "Plex Media Server contains a server-side request forgery (SSRF) vulnerability which could allow an attacker using any X-Plex-Token value to include a full URL in the 'protocol' parameter and force the Plex server to POST to the attacker's chosen destination. This vulnerability can be chained with CVE-2026-96654, CVE-2026-96655, and CVE-2026-96656. ",
-      "knownRansomwareCampaignUse": "Unknown"
-    },
-    {
-      "cveID": "CVE-2026-110936",
-      "vendorProject": "Siemens",
-      "product": "Software Center",
-      "vulnerabilityName": "Siemens Software Center Uncontrolled Search Path Element Vulnerability",
-      "dateAdded": "2026-10-20",
-      "dueDate": "2026-11-03",
-      "shortDescription": "Siemens Software Center contains an uncontrolled search path element vulnerability that could allow an authenticated local attacker to place a specially crafted DLL in a directory that the application searches, leading to arbitrary code execution with the privileges of the affected application.",
-      "knownRansomwareCampaignUse": "Unknown"
-    },
-    {
-      "cveID": "CVE-2026-102764",
-      "vendorProject": "BeyondTrust",
-      "product": "Remote Support",
-      "vulnerabilityName": "BeyondTrust Remote Support Authentication Bypass by Spoofing Vulnerability",
-      "dateAdded": "2026-10-16",
-      "dueDate": "2026-10-19",
-      "shortDescription": "BeyondTrust Remote Support contains an authentication bypass by spoofing vulnerability that could allow a remote attacker to perform file operations on the appliance.",
       "knownRansomwareCampaignUse": "Unknown"
     }
   ]
