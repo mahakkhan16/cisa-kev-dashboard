@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-30T17:22:31.232940+00:00",
-  "catalogVersion": "2026.10.29",
-  "dateReleased": "2026-10-29T19:09:34.4003Z",
-  "totalCount": 1764,
-  "addedLast30Days": 35,
+  "generatedAt": "2026-10-31T16:27:14.886191+00:00",
+  "catalogVersion": "2026.10.30",
+  "dateReleased": "2026-10-30T17:02:45.3665Z",
+  "totalCount": 1766,
+  "addedLast30Days": 36,
   "ransomwareLinkedCount": 361,
   "overdueCount": 1755,
   "topVendors": [
@@ -37,7 +37,7 @@
     },
     {
       "vendor": "Ivanti",
-      "count": 36
+      "count": 38
     },
     {
       "vendor": "Linux",
@@ -49,6 +49,26 @@
     }
   ],
   "recentEntries": [
+    {
+      "cveID": "CVE-2026-118527",
+      "vendorProject": "Ivanti",
+      "product": "Connect Secure",
+      "vulnerabilityName": "Ivanti Connect Secure Generation of Predictable Numbers or Identifiers Vulnerability",
+      "dateAdded": "2026-10-30",
+      "dueDate": "2026-11-13",
+      "shortDescription": "Ivanti Connect Secure contains a generation of predictable numbers or identifiers vulnerability that allows a remote authenticated attacker to upload files with attacker-controlled content to a known location on disk. This vulnerability can be chained with CVE-2026-104935 and CVE-2026-111357.",
+      "knownRansomwareCampaignUse": "Unknown"
+    },
+    {
+      "cveID": "CVE-2026-111357",
+      "vendorProject": "Ivanti",
+      "product": "Connect Secure",
+      "vulnerabilityName": "Ivanti Connect Secure Missing Authentication for Critical Function Vulnerability",
+      "dateAdded": "2026-10-30",
+      "dueDate": "2026-11-02",
+      "shortDescription": "Ivanti Connect Secure contains a missing authentication for critical function vulnerability that could allow a local authenticated attacker to escalate their privileges. This vulnerability can be chained with CVE-2026-104935 and CVE-2026-118527.",
+      "knownRansomwareCampaignUse": "Unknown"
+    },
     {
       "cveID": "CVE-2026-97229",
       "vendorProject": "GitLab",
@@ -177,26 +197,6 @@
       "dateAdded": "2026-10-20",
       "dueDate": "2026-11-03",
       "shortDescription": "Plex Media Server contains a server-side request forgery (SSRF) vulnerability that could allow an authenticated user to request arbitrary internal or external addresses via the '/video/:/transcode/universal' path parameter. This vulnerability can be chained with CVE-2026-96652, CVE-2026-96654, and CVE-2026-96656.",
-      "knownRansomwareCampaignUse": "Unknown"
-    },
-    {
-      "cveID": "CVE-2026-96654",
-      "vendorProject": "Plex",
-      "product": "Media Server",
-      "vulnerabilityName": "Plex Media Server Improper Neutralization of Encoded URI Schemes in a Web Page Vulnerability",
-      "dateAdded": "2026-10-20",
-      "dueDate": "2026-10-23",
-      "shortDescription": "Plex Media Server contains an improper neutralization of encoded URI schemes in a web page vulnerability that could allow an attacker to call other plugins' functions and supply their own parameters. This vulnerability can be chained with CVE-2026-96652, CVE-2026-96655, and CVE-2026-96656.",
-      "knownRansomwareCampaignUse": "Unknown"
-    },
-    {
-      "cveID": "CVE-2026-96652",
-      "vendorProject": "Plex",
-      "product": "Media Server",
-      "vulnerabilityName": "Plex Media Server Server-Side Request Forgery (SSRF) Vulnerability",
-      "dateAdded": "2026-10-20",
-      "dueDate": "2026-11-03",
-      "shortDescription": "Plex Media Server contains a server-side request forgery (SSRF) vulnerability which could allow an attacker using any X-Plex-Token value to include a full URL in the 'protocol' parameter and force the Plex server to POST to the attacker's chosen destination. This vulnerability can be chained with CVE-2026-96654, CVE-2026-96655, and CVE-2026-96656. ",
       "knownRansomwareCampaignUse": "Unknown"
     }
   ]
