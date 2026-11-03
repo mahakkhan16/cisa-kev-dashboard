@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-11-02T20:57:42.103698+00:00",
+  "generatedAt": "2026-11-03T18:45:03.496285+00:00",
   "catalogVersion": "2026.10.30",
   "dateReleased": "2026-10-30T17:02:45.3665Z",
   "totalCount": 1766,
   "addedLast30Days": 33,
   "ransomwareLinkedCount": 361,
-  "overdueCount": 1758,
+  "overdueCount": 1759,
   "topVendors": [
     {
       "vendor": "Microsoft",
