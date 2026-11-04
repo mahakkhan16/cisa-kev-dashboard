@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-11-03T18:45:03.496285+00:00",
-  "catalogVersion": "2026.10.30",
-  "dateReleased": "2026-10-30T17:02:45.3665Z",
-  "totalCount": 1766,
+  "generatedAt": "2026-11-04T18:58:40.387422+00:00",
+  "catalogVersion": "2026.11.03",
+  "dateReleased": "2026-11-03T20:00:24.8741Z",
+  "totalCount": 1767,
   "addedLast30Days": 33,
   "ransomwareLinkedCount": 361,
-  "overdueCount": 1759,
+  "overdueCount": 1762,
   "topVendors": [
     {
       "vendor": "Microsoft",
@@ -49,6 +49,16 @@
     }
   ],
   "recentEntries": [
+    {
+      "cveID": "CVE-2026-119977",
+      "vendorProject": "WordPress",
+      "product": "WordPress Core",
+      "vulnerabilityName": "WordPress WordPress Core Time-of-check Time-of-use (TOCTOU) Race Condition Vulnerability",
+      "dateAdded": "2026-11-03",
+      "dueDate": "2026-11-06",
+      "shortDescription": "WordPress WordPress Core contains a time-of-check time-of-use (TOCTOU) race condition vulnerability that could allow unauthenticated attackers to execute code on the server during the upgrade window. This is due to predictable, web-accessible staging paths used during full-package core upgrades.",
+      "knownRansomwareCampaignUse": "Unknown"
+    },
     {
       "cveID": "CVE-2026-118527",
       "vendorProject": "Ivanti",
@@ -187,16 +197,6 @@
       "dateAdded": "2026-10-20",
       "dueDate": "2026-10-23",
       "shortDescription": "Plex Media Server contains an external control of file name or path vulnerability which can allow an admin user to write arbitrary files that may be executed on load. This vulnerability can be chained with CVE-2026-96652, CVE-2026-96654, and CVE-2026-96655.",
-      "knownRansomwareCampaignUse": "Unknown"
-    },
-    {
-      "cveID": "CVE-2026-96655",
-      "vendorProject": "Plex",
-      "product": "Media Server",
-      "vulnerabilityName": "Plex Media Server Server-Side Request Forgery (SSRF) Vulnerability",
-      "dateAdded": "2026-10-20",
-      "dueDate": "2026-11-03",
-      "shortDescription": "Plex Media Server contains a server-side request forgery (SSRF) vulnerability that could allow an authenticated user to request arbitrary internal or external addresses via the '/video/:/transcode/universal' path parameter. This vulnerability can be chained with CVE-2026-96652, CVE-2026-96654, and CVE-2026-96656.",
       "knownRansomwareCampaignUse": "Unknown"
     }
   ]
