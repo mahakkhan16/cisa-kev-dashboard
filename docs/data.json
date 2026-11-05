@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-11-04T18:58:40.387422+00:00",
-  "catalogVersion": "2026.11.03",
-  "dateReleased": "2026-11-03T20:00:24.8741Z",
-  "totalCount": 1767,
-  "addedLast30Days": 33,
+  "generatedAt": "2026-11-05T19:10:35.167403+00:00",
+  "catalogVersion": "2026.11.04",
+  "dateReleased": "2026-11-04T20:00:05.774Z",
+  "totalCount": 1768,
+  "addedLast30Days": 34,
   "ransomwareLinkedCount": 361,
   "overdueCount": 1762,
   "topVendors": [
@@ -17,7 +17,7 @@
     },
     {
       "vendor": "Apple",
-      "count": 95
+      "count": 96
     },
     {
       "vendor": "Adobe",
@@ -49,6 +49,16 @@
     }
   ],
   "recentEntries": [
+    {
+      "cveID": "CVE-2024-27834",
+      "vendorProject": "Apple",
+      "product": "Multiple Products",
+      "vulnerabilityName": "Apple Multiple Products Improper Authentication Vulnerability",
+      "dateAdded": "2026-11-04",
+      "dueDate": "2026-11-18",
+      "shortDescription": "Apple iOS, iPadOS, macOS, Safari, tvOS and watchOS 10.5 contain an improper authentication vulnerability which could allow an attacker with arbitrary read and write capability to bypass pointer authentication.",
+      "knownRansomwareCampaignUse": "Unknown"
+    },
     {
       "cveID": "CVE-2026-119977",
       "vendorProject": "WordPress",
@@ -187,16 +197,6 @@
       "dateAdded": "2026-10-20",
       "dueDate": "2026-10-23",
       "shortDescription": "EG Secure Solutions SiteGuard Server Edition contains an OS command injection vulnerability which may allow an attacker to execute arbitrary OS commands with root or SYSTEM privileges on the system running the affected product.",
-      "knownRansomwareCampaignUse": "Unknown"
-    },
-    {
-      "cveID": "CVE-2026-96656",
-      "vendorProject": "Plex",
-      "product": "Media Server",
-      "vulnerabilityName": "Plex Media Server External Control of File Name or Path Vulnerability",
-      "dateAdded": "2026-10-20",
-      "dueDate": "2026-10-23",
-      "shortDescription": "Plex Media Server contains an external control of file name or path vulnerability which can allow an admin user to write arbitrary files that may be executed on load. This vulnerability can be chained with CVE-2026-96652, CVE-2026-96654, and CVE-2026-96655.",
       "knownRansomwareCampaignUse": "Unknown"
     }
   ]
