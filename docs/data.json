@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-11-06T18:37:45.351211+00:00",
-  "catalogVersion": "2026.11.04",
-  "dateReleased": "2026-11-04T20:00:05.774Z",
-  "totalCount": 1768,
-  "addedLast30Days": 34,
+  "generatedAt": "2026-11-07T17:05:53.304333+00:00",
+  "catalogVersion": "2026.11.06",
+  "dateReleased": "2026-11-06T19:44:45.1797Z",
+  "totalCount": 1769,
+  "addedLast30Days": 35,
   "ransomwareLinkedCount": 361,
-  "overdueCount": 1762,
+  "overdueCount": 1763,
   "topVendors": [
     {
       "vendor": "Microsoft",
@@ -49,6 +49,16 @@
     }
   ],
   "recentEntries": [
+    {
+      "cveID": "CVE-2026-19868",
+      "vendorProject": "SonicWall",
+      "product": "SonicOS SSLVPN",
+      "vulnerabilityName": "SonicWall SonicOS SSLVPN Use of Single-factor Authentication Vulnerability",
+      "dateAdded": "2026-11-06",
+      "dueDate": "2026-11-20",
+      "shortDescription": "SonicWall SonicOS SSLVPN contains a use of single-factor authentication vulnerability that may allow a user with valid credentials for an alternate authentication method to bypass SAML authentication controls. Successful exploitation may also bypass SAML-enforced multi-factor authentication (MFA).",
+      "knownRansomwareCampaignUse": "Unknown"
+    },
     {
       "cveID": "CVE-2024-27834",
       "vendorProject": "Apple",
@@ -187,16 +197,6 @@
       "dateAdded": "2026-10-23",
       "dueDate": "2026-10-26",
       "shortDescription": "Collabora Collabora Online \u2013 Built-in CODE Server when used within the NextCloud platform contains an OS command injection vulnerability that allows for remote code execution when the CODE server isn't running.",
-      "knownRansomwareCampaignUse": "Unknown"
-    },
-    {
-      "cveID": "CVE-2026-106931",
-      "vendorProject": "EG Secure Solutions",
-      "product": "SiteGuard Server Edition",
-      "vulnerabilityName": "EG Secure Solutions SiteGuard Server Edition OS Command Injection Vulnerability",
-      "dateAdded": "2026-10-20",
-      "dueDate": "2026-10-23",
-      "shortDescription": "EG Secure Solutions SiteGuard Server Edition contains an OS command injection vulnerability which may allow an attacker to execute arbitrary OS commands with root or SYSTEM privileges on the system running the affected product.",
       "knownRansomwareCampaignUse": "Unknown"
     }
   ]
