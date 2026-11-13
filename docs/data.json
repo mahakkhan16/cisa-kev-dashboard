@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-11-12T19:15:56.994163+00:00",
-  "catalogVersion": "2026.11.10",
-  "dateReleased": "2026-11-10T19:03:29.8375Z",
-  "totalCount": 1779,
+  "generatedAt": "2026-11-13T18:52:39.660595+00:00",
+  "catalogVersion": "2026.11.13",
+  "dateReleased": "2026-11-13T17:49:24.9532Z",
+  "totalCount": 1781,
   "addedLast30Days": 40,
   "ransomwareLinkedCount": 361,
-  "overdueCount": 1766,
+  "overdueCount": 1770,
   "topVendors": [
     {
       "vendor": "Microsoft",
@@ -49,6 +49,26 @@
     }
   ],
   "recentEntries": [
+    {
+      "cveID": "CVE-2026-114713",
+      "vendorProject": "UnrealIRCd",
+      "product": "UnrealIRCd",
+      "vulnerabilityName": "UnrealIRCd Improper Neutralization of Delimiters Vulnerability",
+      "dateAdded": "2026-11-13",
+      "dueDate": "2026-11-16",
+      "shortDescription": "UnrealIRCd UnrealIRCd contains an improper neutralization of delimiters vulnerability that allows any user on a network with two or more linked servers to inject server-to-server commands that are executed with server authority.",
+      "knownRansomwareCampaignUse": "Unknown"
+    },
+    {
+      "cveID": "CVE-2026-123039",
+      "vendorProject": "Check Point",
+      "product": "Multiple Products",
+      "vulnerabilityName": "Check Point Multiple Products Incorrect Permission Assignment for Critical Resource Vulnerability",
+      "dateAdded": "2026-11-13",
+      "dueDate": "2026-11-16",
+      "shortDescription": "Check Point Firewall, Multi-Domain Security Management Server, Scalable Platforms, Security Gateway, and Security Management Server contain an incorrect permissions assignment for critical resources vulnerability when the Gaia OS DynamicCLI daemon runs as root and listens on a world-writable local socket without authenticating connecting processes. An authenticated local user can send a command to the socket and have it executed as root.",
+      "knownRansomwareCampaignUse": "Unknown"
+    },
     {
       "cveID": "CVE-2026-124194",
       "vendorProject": "Microsoft",
@@ -177,26 +197,6 @@
       "dateAdded": "2026-11-03",
       "dueDate": "2026-11-06",
       "shortDescription": "WordPress WordPress Core contains a time-of-check time-of-use (TOCTOU) race condition vulnerability that could allow unauthenticated attackers to execute code on the server during the upgrade window. This is due to predictable, web-accessible staging paths used during full-package core upgrades.",
-      "knownRansomwareCampaignUse": "Unknown"
-    },
-    {
-      "cveID": "CVE-2026-118527",
-      "vendorProject": "Ivanti",
-      "product": "Connect Secure",
-      "vulnerabilityName": "Ivanti Connect Secure Generation of Predictable Numbers or Identifiers Vulnerability",
-      "dateAdded": "2026-10-30",
-      "dueDate": "2026-11-13",
-      "shortDescription": "Ivanti Connect Secure contains a generation of predictable numbers or identifiers vulnerability that allows a remote authenticated attacker to upload files with attacker-controlled content to a known location on disk. This vulnerability can be chained with CVE-2026-104935 and CVE-2026-111357.",
-      "knownRansomwareCampaignUse": "Unknown"
-    },
-    {
-      "cveID": "CVE-2026-111357",
-      "vendorProject": "Ivanti",
-      "product": "Connect Secure",
-      "vulnerabilityName": "Ivanti Connect Secure Missing Authentication for Critical Function Vulnerability",
-      "dateAdded": "2026-10-30",
-      "dueDate": "2026-11-02",
-      "shortDescription": "Ivanti Connect Secure contains a missing authentication for critical function vulnerability that could allow a local authenticated attacker to escalate their privileges. This vulnerability can be chained with CVE-2026-104935 and CVE-2026-118527.",
       "knownRansomwareCampaignUse": "Unknown"
     }
   ]
