@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-11-16T21:21:59.917654+00:00",
-  "catalogVersion": "2026.11.13",
-  "dateReleased": "2026-11-13T20:24:18.3008Z",
-  "totalCount": 1781,
-  "addedLast30Days": 33,
+  "generatedAt": "2026-11-17T20:09:56.650562+00:00",
+  "catalogVersion": "2026.11.17",
+  "dateReleased": "2026-11-17T17:53:15.5664Z",
+  "totalCount": 1782,
+  "addedLast30Days": 34,
   "ransomwareLinkedCount": 361,
-  "overdueCount": 1773,
+  "overdueCount": 1775,
   "topVendors": [
     {
       "vendor": "Microsoft",
@@ -49,6 +49,16 @@
     }
   ],
   "recentEntries": [
+    {
+      "cveID": "CVE-2026-115731",
+      "vendorProject": "Perforce",
+      "product": "Puppet Enterprise",
+      "vulnerabilityName": "Perforce Puppet Enterprise Deserialization of Untrusted Data Vulnerability",
+      "dateAdded": "2026-11-17",
+      "dueDate": "2026-12-01",
+      "shortDescription": "Perforce Puppet Enterprise contains a deserialization of untrusted data vulnerability in Puppet\u2019s report-processing code that allows a client with any CA-signed agent certificate to execute arbitrary code on the Puppet Server as the service user by submitting a report containing a crafted rich-data type through a PUT request. If the certificate authority automatically signs requests without strong verification, an unauthenticated network attacker can obtain a valid certificate and exploit the vulnerability.",
+      "knownRansomwareCampaignUse": "Unknown"
+    },
     {
       "cveID": "CVE-2026-114713",
       "vendorProject": "UnrealIRCd",
@@ -187,16 +197,6 @@
       "dateAdded": "2026-11-04",
       "dueDate": "2026-11-18",
       "shortDescription": "Apple iOS, iPadOS, macOS, Safari, tvOS and watchOS 10.5 contain an improper authentication vulnerability which could allow an attacker with arbitrary read and write capability to bypass pointer authentication.",
-      "knownRansomwareCampaignUse": "Unknown"
-    },
-    {
-      "cveID": "CVE-2026-119977",
-      "vendorProject": "WordPress",
-      "product": "WordPress Core",
-      "vulnerabilityName": "WordPress WordPress Core Time-of-check Time-of-use (TOCTOU) Race Condition Vulnerability",
-      "dateAdded": "2026-11-03",
-      "dueDate": "2026-11-06",
-      "shortDescription": "WordPress WordPress Core contains a time-of-check time-of-use (TOCTOU) race condition vulnerability that could allow unauthenticated attackers to execute code on the server during the upgrade window. This is due to predictable, web-accessible staging paths used during full-package core upgrades.",
       "knownRansomwareCampaignUse": "Unknown"
     }
   ]
