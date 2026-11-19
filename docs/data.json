@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-11-18T19:41:29.749438+00:00",
-  "catalogVersion": "2026.11.17",
-  "dateReleased": "2026-11-17T17:53:15.5664Z",
-  "totalCount": 1782,
-  "addedLast30Days": 34,
+  "generatedAt": "2026-11-19T19:41:51.430216+00:00",
+  "catalogVersion": "2026.11.18",
+  "dateReleased": "2026-11-18T19:17:41.0354Z",
+  "totalCount": 1786,
+  "addedLast30Days": 38,
   "ransomwareLinkedCount": 361,
-  "overdueCount": 1775,
+  "overdueCount": 1776,
   "topVendors": [
     {
       "vendor": "Microsoft",
@@ -33,7 +33,7 @@
     },
     {
       "vendor": "Apache",
-      "count": 41
+      "count": 42
     },
     {
       "vendor": "Ivanti",
@@ -49,6 +49,46 @@
     }
   ],
   "recentEntries": [
+    {
+      "cveID": "CVE-2024-10441",
+      "vendorProject": "Synology",
+      "product": "DiskStation Manager (DSM)",
+      "vulnerabilityName": "Synology DiskStation Manager (DSM) Improper Encoding or Escaping of Output Vulnerability",
+      "dateAdded": "2026-11-18",
+      "dueDate": "2026-11-21",
+      "shortDescription": "Synology DSM contains an improper encoding or escaping of output vulnerability in the system plugin daemon in Synology BeeStation OS (BSM) that could allow a remote attacker to execute arbitrary code via unspecified vectors.",
+      "knownRansomwareCampaignUse": "Unknown"
+    },
+    {
+      "cveID": "CVE-2026-40217",
+      "vendorProject": "BerriAI",
+      "product": "LiteLLM",
+      "vulnerabilityName": "BerriAI LiteLLM Unprotected Alternate Channel Vulnerability",
+      "dateAdded": "2026-11-18",
+      "dueDate": "2026-12-02",
+      "shortDescription": "BerriAI LiteLLM contains an unprotected alternate channel vulnerability that could allow remote attackers to execute arbitrary code via bytecode rewriting at the /guardrails/test_custom_code URI.",
+      "knownRansomwareCampaignUse": "Unknown"
+    },
+    {
+      "cveID": "CVE-2026-90817",
+      "vendorProject": "Vanderbilt University",
+      "product": "Research Electronic Data Capture (REDCap)",
+      "vulnerabilityName": "Vanderbilt University Research Electronic Data Capture (REDCap) Code Injection Vulnerability",
+      "dateAdded": "2026-11-18",
+      "dueDate": "2026-11-21",
+      "shortDescription": "Vanderbilt University Research Electronic Data Capture (REDCap) contains a code injection vulnerability which could allow an unauthenticated attacker to execute arbitrary code on the server. An attacker could exploit this via crafted HTTP requests that access an unintended controller route from a public survey context and supply a crafted file-path or stream parameter during data import processing. Exploitation requires knowledge of a valid public survey hash.",
+      "knownRansomwareCampaignUse": "Unknown"
+    },
+    {
+      "cveID": "CVE-2026-90436",
+      "vendorProject": "Apache",
+      "product": "Axis",
+      "vulnerabilityName": "Apache Axis Unsafe Reflection Vulnerability",
+      "dateAdded": "2026-11-18",
+      "dueDate": "2026-11-21",
+      "shortDescription": "Apache Axis contains an unsafe reflection vulnerability that could allow an unauthenticated remote attacker to execute arbitrary code via a crafted SOAP fault message that causes Axis to load and instantiate an attacker-specified class when a suitable class is available on the application classpath. The impacted product(s) could be end-of-life (EoL) and/or end-of-service (EoS). Users are advised to discontinue use and/or transition to a supported version.",
+      "knownRansomwareCampaignUse": "Unknown"
+    },
     {
       "cveID": "CVE-2026-115731",
       "vendorProject": "Perforce",
@@ -157,46 +197,6 @@
       "dateAdded": "2026-11-09",
       "dueDate": "2026-11-12",
       "shortDescription": "OpenBSD OpenSSH on Linux contains an unexpected status code or return value vulnerability that could allow for authentication bypass.",
-      "knownRansomwareCampaignUse": "Unknown"
-    },
-    {
-      "cveID": "CVE-2026-116779",
-      "vendorProject": "SignalWire",
-      "product": "FreeSwitch",
-      "vulnerabilityName": "SignalWire FreeSwitch Code Injection Vulnerability",
-      "dateAdded": "2026-11-09",
-      "dueDate": "2026-11-12",
-      "shortDescription": "SignalWire FreeSwitch contains a code injection vulnerability that permits configuration and credential disclosure, arbitrary call control, and command execution.",
-      "knownRansomwareCampaignUse": "Unknown"
-    },
-    {
-      "cveID": "CVE-2026-123218",
-      "vendorProject": "IBM",
-      "product": "Aspera Faspex",
-      "vulnerabilityName": "IBM Aspera Faspex Incorrect Authorization Vulnerability",
-      "dateAdded": "2026-11-09",
-      "dueDate": "2026-11-12",
-      "shortDescription": "IBM Aspera Faspex contains an incorrect authorization vulnerability that could allow an authenticated user to craft a specific message to bypass authorization, causing privilege escalations.",
-      "knownRansomwareCampaignUse": "Unknown"
-    },
-    {
-      "cveID": "CVE-2026-19868",
-      "vendorProject": "SonicWall",
-      "product": "SonicOS SSLVPN",
-      "vulnerabilityName": "SonicWall SonicOS SSLVPN Use of Single-factor Authentication Vulnerability",
-      "dateAdded": "2026-11-06",
-      "dueDate": "2026-11-20",
-      "shortDescription": "SonicWall SonicOS SSLVPN contains a use of single-factor authentication vulnerability that may allow a user with valid credentials for an alternate authentication method to bypass SAML authentication controls. Successful exploitation may also bypass SAML-enforced multi-factor authentication (MFA).",
-      "knownRansomwareCampaignUse": "Unknown"
-    },
-    {
-      "cveID": "CVE-2024-27834",
-      "vendorProject": "Apple",
-      "product": "Multiple Products",
-      "vulnerabilityName": "Apple Multiple Products Improper Authentication Vulnerability",
-      "dateAdded": "2026-11-04",
-      "dueDate": "2026-11-18",
-      "shortDescription": "Apple iOS, iPadOS, macOS, Safari, tvOS and watchOS 10.5 contain an improper authentication vulnerability which could allow an attacker with arbitrary read and write capability to bypass pointer authentication.",
       "knownRansomwareCampaignUse": "Unknown"
     }
   ]
