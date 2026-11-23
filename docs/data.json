@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-11-22T18:46:29.347508+00:00",
-  "catalogVersion": "2026.11.20",
-  "dateReleased": "2026-11-20T17:48:39.1516Z",
-  "totalCount": 1790,
+  "generatedAt": "2026-11-23T22:59:39.401892+00:00",
+  "catalogVersion": "2026.11.23",
+  "dateReleased": "2026-11-23T19:43:55.7979Z",
+  "totalCount": 1792,
   "addedLast30Days": 36,
-  "ransomwareLinkedCount": 361,
+  "ransomwareLinkedCount": 362,
   "overdueCount": 1780,
   "topVendors": [
     {
@@ -49,6 +49,26 @@
     }
   ],
   "recentEntries": [
+    {
+      "cveID": "CVE-2026-133968",
+      "vendorProject": "Project MONAI",
+      "product": "MONAI Label",
+      "vulnerabilityName": "Project MONAI MONAI Label Path Traversal Vulnerability",
+      "dateAdded": "2026-11-23",
+      "dueDate": "2026-11-26",
+      "shortDescription": "Project MONAI MONAI Label contains a path traversal vulnerability that allows an unauthenticated remote attacker to write arbitrary files outside the intended datastore directory, potentially resulting in remote code execution.",
+      "knownRansomwareCampaignUse": "Unknown"
+    },
+    {
+      "cveID": "CVE-2026-134624",
+      "vendorProject": "N-able",
+      "product": "MailAssure",
+      "vulnerabilityName": "N-able MailAssure (SpamExperts) Server-Side Request Forgery (SSRF) Vulnerability",
+      "dateAdded": "2026-11-23",
+      "dueDate": "2026-11-26",
+      "shortDescription": "N-able MailAssure (SpamExperts) contains a server-side request forgery vulnerability in the LDAP synchronization connection check that allows an authenticated API user to connect to arbitrary internal hosts and ports, determine which are reachable, and send crafted data to internal services.",
+      "knownRansomwareCampaignUse": "Unknown"
+    },
     {
       "cveID": "CVE-2026-129448",
       "vendorProject": "Apache",
@@ -97,7 +117,7 @@
       "dateAdded": "2026-11-18",
       "dueDate": "2026-11-21",
       "shortDescription": "Synology DSM contains an improper encoding or escaping of output vulnerability in the system plugin daemon in Synology BeeStation OS (BSM) that could allow a remote attacker to execute arbitrary code via unspecified vectors.",
-      "knownRansomwareCampaignUse": "Unknown"
+      "knownRansomwareCampaignUse": "Known"
     },
     {
       "cveID": "CVE-2026-40217",
@@ -177,26 +197,6 @@
       "dateAdded": "2026-11-10",
       "dueDate": "2026-11-24",
       "shortDescription": "Openwave Messaging Limited Webtop Media Transcoder contains an incorrect resource transfer between spheres vulnerability that may allow an authenticated user to process and convert unintended document types if bypassing the Webmail experience.",
-      "knownRansomwareCampaignUse": "Unknown"
-    },
-    {
-      "cveID": "CVE-2026-20320",
-      "vendorProject": "Cisco",
-      "product": "BroadWorks",
-      "vulnerabilityName": "Cisco BroadWorks Improper Restriction of XML External Entity Reference Vulnerability",
-      "dateAdded": "2026-11-10",
-      "dueDate": "2026-11-24",
-      "shortDescription": "Cisco BroadWorks contains an improper restriction of XML external entity reference vulnerability that could allow an unauthenticated, remote attacker to read sensitive configuration information on an affected system.",
-      "knownRansomwareCampaignUse": "Unknown"
-    },
-    {
-      "cveID": "CVE-2026-111560",
-      "vendorProject": "Barracuda Networks",
-      "product": "Multiple Products",
-      "vulnerabilityName": "Barracuda Networks Multiple Products OS Command Injection Vulnerability",
-      "dateAdded": "2026-11-10",
-      "dueDate": "2026-11-13",
-      "shortDescription": "Barracuda Networks Email Security Gateway (ESG), Load Balancer, Application Delivery Controller (ADC), Message Archiver (BMA), WAF Control Center (WCC), Web Application Firewall (WAF), and Web Security Gateway (WSG) contain an OS command injection vulnerability. This vulnerability could allow an authenticated administrator to inject OS commands that execute with root privileges when the crafted timezone value is subsequently processed. This vulnerability can be chained with CVE-2026-116606",
       "knownRansomwareCampaignUse": "Unknown"
     }
   ]
