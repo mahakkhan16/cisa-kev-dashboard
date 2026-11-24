@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-11-23T22:59:39.401892+00:00",
-  "catalogVersion": "2026.11.23",
-  "dateReleased": "2026-11-23T19:43:55.7979Z",
-  "totalCount": 1792,
-  "addedLast30Days": 36,
+  "generatedAt": "2026-11-24T21:38:57.819527+00:00",
+  "catalogVersion": "2026.11.24",
+  "dateReleased": "2026-11-24T17:47:46.199Z",
+  "totalCount": 1795,
+  "addedLast30Days": 39,
   "ransomwareLinkedCount": 362,
-  "overdueCount": 1780,
+  "overdueCount": 1784,
   "topVendors": [
     {
       "vendor": "Microsoft",
@@ -49,6 +49,36 @@
     }
   ],
   "recentEntries": [
+    {
+      "cveID": "CVE-2026-132224",
+      "vendorProject": "Optimizely",
+      "product": "Web Experimentation",
+      "vulnerabilityName": "Optimizely Web Experimentation External Control of Critical State Data Vulnerability",
+      "dateAdded": "2026-11-24",
+      "dueDate": "2026-11-27",
+      "shortDescription": "Optimizely Web Experimentation contains an external control of critical state data vulnerability in its account signup flow that could allow an attacker to impersonate existing customer users and modify Project JavaScript. Successful exploitation can result in attacker-controlled JavaScript being distributed through Optimizely-hosted assets and executed in browsers visiting affected customer websites.",
+      "knownRansomwareCampaignUse": "Unknown"
+    },
+    {
+      "cveID": "CVE-2026-131914",
+      "vendorProject": "Idunno",
+      "product": "AntiCsrf",
+      "vulnerabilityName": "Idunno AntiCsrf Deserialization of Untrusted Data Vulnerability",
+      "dateAdded": "2026-11-24",
+      "dueDate": "2026-11-27",
+      "shortDescription": "Idunno AntiCsrf contains a deserialization of untrusted data vulnerability that allows an unauthenticated remote attacker to execute arbitrary code via object injection. The impacted product(s) could be end-of-life (EoL) and/or end-of-service (EoS). Users are advised to discontinue use and/or transition to a supported version.",
+      "knownRansomwareCampaignUse": "Unknown"
+    },
+    {
+      "cveID": "CVE-2026-132165",
+      "vendorProject": "Drupal",
+      "product": "Core",
+      "vulnerabilityName": "Drupal Core Remote Code Execution Vulnerability",
+      "dateAdded": "2026-11-24",
+      "dueDate": "2026-11-27",
+      "shortDescription": "Drupal Core contains a not failing securely vulnerability that could allow an unauthenticated attacker to take over an existing site or execute arbitrary code via the Drupal installer. Under specific conditions, the attacker can use install.php to attempt to reinstall Drupal on the site.",
+      "knownRansomwareCampaignUse": "Unknown"
+    },
     {
       "cveID": "CVE-2026-133968",
       "vendorProject": "Project MONAI",
@@ -167,36 +197,6 @@
       "dateAdded": "2026-11-13",
       "dueDate": "2026-11-16",
       "shortDescription": "UnrealIRCd UnrealIRCd contains an improper neutralization of delimiters vulnerability that allows any user on a network with two or more linked servers to inject server-to-server commands that are executed with server authority.",
-      "knownRansomwareCampaignUse": "Unknown"
-    },
-    {
-      "cveID": "CVE-2026-123039",
-      "vendorProject": "Check Point",
-      "product": "Multiple Products",
-      "vulnerabilityName": "Check Point Multiple Products Incorrect Permission Assignment for Critical Resource Vulnerability",
-      "dateAdded": "2026-11-13",
-      "dueDate": "2026-11-16",
-      "shortDescription": "Check Point Firewall, Multi-Domain Security Management Server, Scalable Platforms, Security Gateway, and Security Management Server contain an incorrect permissions assignment for critical resources vulnerability when the Gaia OS DynamicCLI daemon runs as root and listens on a world-writable local socket without authenticating connecting processes. An authenticated local user can send a command to the socket and have it executed as root.",
-      "knownRansomwareCampaignUse": "Unknown"
-    },
-    {
-      "cveID": "CVE-2026-124194",
-      "vendorProject": "Microsoft",
-      "product": "Office",
-      "vulnerabilityName": "Microsoft Office Outlook Missing User Interaction for Potentially Unsafe Action Vulnerability",
-      "dateAdded": "2026-11-10",
-      "dueDate": "2026-11-24",
-      "shortDescription": "Microsoft Office Outlook contains a missing user interaction for potentially unsafe action vulnerability that allows an unauthorized attacker to perform spoofing over a network.",
-      "knownRansomwareCampaignUse": "Unknown"
-    },
-    {
-      "cveID": "CVE-2026-111793",
-      "vendorProject": "Openwave Messaging Limited",
-      "product": "Webtop Media Transcoder",
-      "vulnerabilityName": "Openwave Messaging Limited Webtop Media Transcoder Incorrect Resource Transfer Between Spheres Vulnerability",
-      "dateAdded": "2026-11-10",
-      "dueDate": "2026-11-24",
-      "shortDescription": "Openwave Messaging Limited Webtop Media Transcoder contains an incorrect resource transfer between spheres vulnerability that may allow an authenticated user to process and convert unintended document types if bypassing the Webmail experience.",
       "knownRansomwareCampaignUse": "Unknown"
     }
   ]
