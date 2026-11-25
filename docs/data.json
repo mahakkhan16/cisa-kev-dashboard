@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-11-24T21:38:57.819527+00:00",
-  "catalogVersion": "2026.11.24",
-  "dateReleased": "2026-11-24T17:47:46.199Z",
-  "totalCount": 1795,
-  "addedLast30Days": 39,
+  "generatedAt": "2026-11-25T20:46:55.773731+00:00",
+  "catalogVersion": "2026.11.25",
+  "dateReleased": "2026-11-25T19:48:12.4344Z",
+  "totalCount": 1805,
+  "addedLast30Days": 49,
   "ransomwareLinkedCount": 362,
-  "overdueCount": 1784,
+  "overdueCount": 1788,
   "topVendors": [
     {
       "vendor": "Microsoft",
@@ -49,6 +49,106 @@
     }
   ],
   "recentEntries": [
+    {
+      "cveID": "CVE-2026-103406",
+      "vendorProject": "Hewlett Packard Enterprise (HPE)",
+      "product": "Juniper Session Smart Conductor and Session Smart Router",
+      "vulnerabilityName": "Hewlett Packard Enterprise (HPE) Juniper Session Smart Conductor and Session Smart Router OS Command Injection Vulnerability",
+      "dateAdded": "2026-11-25",
+      "dueDate": "2026-11-28",
+      "shortDescription": "Hewlett Packard Enterprise (HPE) Juniper Session Smart Conductor and Session Smart Router contain an OS command injection vulnerability that could allow a remote attacker to execute arbitrary commands as root via a specially crafted salt minion ID.",
+      "knownRansomwareCampaignUse": "Unknown"
+    },
+    {
+      "cveID": "CVE-2026-133469",
+      "vendorProject": "Vates",
+      "product": "Xen Orchestra",
+      "vulnerabilityName": "Vates Xen Orchestra Improper Validation of Specified Type of Input Vulnerability",
+      "dateAdded": "2026-11-25",
+      "dueDate": "2026-11-28",
+      "shortDescription": "Vates Xen Orchestra contains an improper validation of specified type of input vulnerability that could allow an unauthenticated attacker to bypass authentication and perform actions with administrative privileges via a specially crafted authentication token containing an empty JSON object.",
+      "knownRansomwareCampaignUse": "Unknown"
+    },
+    {
+      "cveID": "CVE-2025-41450",
+      "vendorProject": "Danfoss",
+      "product": "AK-SM 800A Series",
+      "vulnerabilityName": "Danfoss AK-SM 800A Series Improper Authentication Vulnerability",
+      "dateAdded": "2026-11-25",
+      "dueDate": "2026-12-09",
+      "shortDescription": "Danfoss AK-SM 800A Series contains an improper authentication vulnerability that could allow an attacker to generate a web report exposing sensitive information, including internal IP addresses, usernames, and store names.",
+      "knownRansomwareCampaignUse": "Unknown"
+    },
+    {
+      "cveID": "CVE-2023-25914",
+      "vendorProject": "Danfoss",
+      "product": "AK-SM 800A Series",
+      "vulnerabilityName": "Danfoss AK-SM 800A Series Path Traversal Vulnerability",
+      "dateAdded": "2026-11-25",
+      "dueDate": "2026-11-28",
+      "shortDescription": "Danfoss AK-SM 800A Series contains a path traversal vulnerability that could allow an attacker to access and read underlying server system files via the XML interface.",
+      "knownRansomwareCampaignUse": "Unknown"
+    },
+    {
+      "cveID": "CVE-2023-25915",
+      "vendorProject": "Danfoss",
+      "product": "AK-SM 800A Series",
+      "vulnerabilityName": "Danfoss AK-SM 800A Series Improper Input Validation Vulnerability",
+      "dateAdded": "2026-11-25",
+      "dueDate": "2026-11-28",
+      "shortDescription": "Danfoss AK-SM 800A Series contains an improper input validation vulnerability that could allow a remote attacker to run arbitrary commands on the affected system.",
+      "knownRansomwareCampaignUse": "Unknown"
+    },
+    {
+      "cveID": "CVE-2026-133324",
+      "vendorProject": "Mitel",
+      "product": "MiCollab",
+      "vulnerabilityName": "Mitel MiCollab Not Failing Securely Vulnerability",
+      "dateAdded": "2026-11-25",
+      "dueDate": "2026-11-28",
+      "shortDescription": "Mitel MiCollab contains a not failing securely vulnerability in the Audio, Web and Video Conferencing (AWV) component that could allow an unauthenticated attacker to bypass authentication controls and perform unauthorized actions.",
+      "knownRansomwareCampaignUse": "Unknown"
+    },
+    {
+      "cveID": "CVE-2026-133275",
+      "vendorProject": "Mitel",
+      "product": "MiCollab",
+      "vulnerabilityName": "Mitel MiCollab Unrestricted Upload of File with Dangerous Type Vulnerability",
+      "dateAdded": "2026-11-25",
+      "dueDate": "2026-11-28",
+      "shortDescription": "Mitel MiCollab contains an unrestricted upload of file with dangerous type vulnerability in the Audio, Web and Video Conferencing (AWV) component due to insufficient file type validation that could allow an unauthenticated attacker to upload arbitrary files.",
+      "knownRansomwareCampaignUse": "Unknown"
+    },
+    {
+      "cveID": "CVE-2026-133311",
+      "vendorProject": "Mitel",
+      "product": "MiCollab",
+      "vulnerabilityName": "Mitel MiCollab Weak Authentication Vulnerability",
+      "dateAdded": "2026-11-25",
+      "dueDate": "2026-12-09",
+      "shortDescription": "Mitel MiCollab contains a weak authentication vulnerability in the Audio, Web and Video Conferencing (AWV) component that could allow an unauthenticated attacker to access sensitive information using a specific system-generated random identifier or pre-staged content.",
+      "knownRansomwareCampaignUse": "Unknown"
+    },
+    {
+      "cveID": "CVE-2026-133303",
+      "vendorProject": "Mitel",
+      "product": "MiCollab",
+      "vulnerabilityName": "Mitel MiCollab XML Injection Vulnerability",
+      "dateAdded": "2026-11-25",
+      "dueDate": "2026-11-28",
+      "shortDescription": "Mitel MiCollab contains an XML injection vulnerability in its Audio, Web, and Video Conferencing (AWV) component that could allow an unauthenticated attacker to execute arbitrary commands using pre-staged malicious content.",
+      "knownRansomwareCampaignUse": "Unknown"
+    },
+    {
+      "cveID": "CVE-2026-133323",
+      "vendorProject": "Mitel",
+      "product": "MiCollab",
+      "vulnerabilityName": "Mitel MiCollab OS Command Injection Vulnerability",
+      "dateAdded": "2026-11-25",
+      "dueDate": "2026-11-28",
+      "shortDescription": "Mitel MiCollab contains an improper neutralization of special elements used in an OS command (OS command injection) vulnerability in its Audio, Web, and Video Conferencing (AWV) component that could allow an unauthenticated attacker to execute arbitrary system commands.",
+      "knownRansomwareCampaignUse": "Unknown"
+    },
     {
       "cveID": "CVE-2026-132224",
       "vendorProject": "Optimizely",
@@ -97,106 +197,6 @@
       "dateAdded": "2026-11-23",
       "dueDate": "2026-11-26",
       "shortDescription": "N-able MailAssure (SpamExperts) contains a server-side request forgery vulnerability in the LDAP synchronization connection check that allows an authenticated API user to connect to arbitrary internal hosts and ports, determine which are reachable, and send crafted data to internal services.",
-      "knownRansomwareCampaignUse": "Unknown"
-    },
-    {
-      "cveID": "CVE-2026-129448",
-      "vendorProject": "Apache",
-      "product": "Roller",
-      "vulnerabilityName": "Apache Roller Deserialization of Untrusted Data Vulnerability",
-      "dateAdded": "2026-11-20",
-      "dueDate": "2026-11-23",
-      "shortDescription": "Apache Roller contains a deserialization of untrusted data vulnerability that allows an unauthenticated remote attacker to execute arbitrary code via the XML-RPC endpoint, which accepts and deserializes vendor extension types before authentication. This CVE covers the same underlying vulnerability as CVE-2026-82384 but applies to a broader range of affected versions.",
-      "knownRansomwareCampaignUse": "Unknown"
-    },
-    {
-      "cveID": "CVE-2026-123890",
-      "vendorProject": "Broadcom",
-      "product": "VMware vCenter",
-      "vulnerabilityName": "VMWare vCenter Authentication Bypass Using an Alternate Path or Channel Vulnerability",
-      "dateAdded": "2026-11-20",
-      "dueDate": "2026-11-23",
-      "shortDescription": "Broadcom VMware vCenter contains an authentication bypass using an alternate path or channel vulnerability in the VMware Directory Service that allows an unauthenticated attacker with network access to vCenter to bypass authentication and gain unauthorized access to the system.",
-      "knownRansomwareCampaignUse": "Unknown"
-    },
-    {
-      "cveID": "CVE-2025-42884",
-      "vendorProject": "SAP",
-      "product": "NetWeaver",
-      "vulnerabilityName": "SAP NetWeaver Improper Neutralization of Special Elements in Data Query Logic Vulnerability",
-      "dateAdded": "2026-11-20",
-      "dueDate": "2026-11-23",
-      "shortDescription": "SAP NetWeaver Enterprise Portal contains an improper neutralization of special elements in data query logic vulnerability that allows an unauthenticated attacker to disclose or modify server information via injected JNDI environment properties or a URL used during JNDI lookup operations.",
-      "knownRansomwareCampaignUse": "Unknown"
-    },
-    {
-      "cveID": "CVE-2026-76466",
-      "vendorProject": "Cisco",
-      "product": "Expressway Series",
-      "vulnerabilityName": "Cisco Expressway Series Use of Hard-coded Credentials Vulnerability",
-      "dateAdded": "2026-11-20",
-      "dueDate": "2026-11-23",
-      "shortDescription": "Cisco Expressway Series contains a use of hard-coded credentials vulnerability that allows an unauthenticated, remote attacker with persistent cookies and network access to execute commands as root on a clustered device via the database service.",
-      "knownRansomwareCampaignUse": "Unknown"
-    },
-    {
-      "cveID": "CVE-2024-10441",
-      "vendorProject": "Synology",
-      "product": "DiskStation Manager (DSM)",
-      "vulnerabilityName": "Synology DiskStation Manager (DSM) Improper Encoding or Escaping of Output Vulnerability",
-      "dateAdded": "2026-11-18",
-      "dueDate": "2026-11-21",
-      "shortDescription": "Synology DSM contains an improper encoding or escaping of output vulnerability in the system plugin daemon in Synology BeeStation OS (BSM) that could allow a remote attacker to execute arbitrary code via unspecified vectors.",
-      "knownRansomwareCampaignUse": "Known"
-    },
-    {
-      "cveID": "CVE-2026-40217",
-      "vendorProject": "BerriAI",
-      "product": "LiteLLM",
-      "vulnerabilityName": "BerriAI LiteLLM Unprotected Alternate Channel Vulnerability",
-      "dateAdded": "2026-11-18",
-      "dueDate": "2026-12-02",
-      "shortDescription": "BerriAI LiteLLM contains an unprotected alternate channel vulnerability that could allow remote attackers to execute arbitrary code via bytecode rewriting at the /guardrails/test_custom_code URI.",
-      "knownRansomwareCampaignUse": "Unknown"
-    },
-    {
-      "cveID": "CVE-2026-90817",
-      "vendorProject": "Vanderbilt University",
-      "product": "Research Electronic Data Capture (REDCap)",
-      "vulnerabilityName": "Vanderbilt University Research Electronic Data Capture (REDCap) Code Injection Vulnerability",
-      "dateAdded": "2026-11-18",
-      "dueDate": "2026-11-21",
-      "shortDescription": "Vanderbilt University Research Electronic Data Capture (REDCap) contains a code injection vulnerability which could allow an unauthenticated attacker to execute arbitrary code on the server. An attacker could exploit this via crafted HTTP requests that access an unintended controller route from a public survey context and supply a crafted file-path or stream parameter during data import processing. Exploitation requires knowledge of a valid public survey hash.",
-      "knownRansomwareCampaignUse": "Unknown"
-    },
-    {
-      "cveID": "CVE-2026-90436",
-      "vendorProject": "Apache",
-      "product": "Axis",
-      "vulnerabilityName": "Apache Axis Unsafe Reflection Vulnerability",
-      "dateAdded": "2026-11-18",
-      "dueDate": "2026-11-21",
-      "shortDescription": "Apache Axis contains an unsafe reflection vulnerability that could allow an unauthenticated remote attacker to execute arbitrary code via a crafted SOAP fault message that causes Axis to load and instantiate an attacker-specified class when a suitable class is available on the application classpath. The impacted product(s) could be end-of-life (EoL) and/or end-of-service (EoS). Users are advised to discontinue use and/or transition to a supported version.",
-      "knownRansomwareCampaignUse": "Unknown"
-    },
-    {
-      "cveID": "CVE-2026-115731",
-      "vendorProject": "Perforce",
-      "product": "Puppet Enterprise",
-      "vulnerabilityName": "Perforce Puppet Enterprise Deserialization of Untrusted Data Vulnerability",
-      "dateAdded": "2026-11-17",
-      "dueDate": "2026-12-01",
-      "shortDescription": "Perforce Puppet Enterprise contains a deserialization of untrusted data vulnerability in Puppet\u2019s report-processing code that allows a client with any CA-signed agent certificate to execute arbitrary code on the Puppet Server as the service user by submitting a report containing a crafted rich-data type through a PUT request. If the certificate authority automatically signs requests without strong verification, an unauthenticated network attacker can obtain a valid certificate and exploit the vulnerability.",
-      "knownRansomwareCampaignUse": "Unknown"
-    },
-    {
-      "cveID": "CVE-2026-114713",
-      "vendorProject": "UnrealIRCd",
-      "product": "UnrealIRCd",
-      "vulnerabilityName": "UnrealIRCd Improper Neutralization of Delimiters Vulnerability",
-      "dateAdded": "2026-11-13",
-      "dueDate": "2026-11-16",
-      "shortDescription": "UnrealIRCd UnrealIRCd contains an improper neutralization of delimiters vulnerability that allows any user on a network with two or more linked servers to inject server-to-server commands that are executed with server authority.",
       "knownRansomwareCampaignUse": "Unknown"
     }
   ]
