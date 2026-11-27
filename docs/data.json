@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-11-26T20:39:30.527338+00:00",
-  "catalogVersion": "2026.11.25",
-  "dateReleased": "2026-11-25T19:48:12.4344Z",
-  "totalCount": 1805,
-  "addedLast30Days": 47,
+  "generatedAt": "2026-11-27T20:25:26.738954+00:00",
+  "catalogVersion": "2026.11.27",
+  "dateReleased": "2026-11-27T18:03:12.5733Z",
+  "totalCount": 1808,
+  "addedLast30Days": 48,
   "ransomwareLinkedCount": 362,
-  "overdueCount": 1788,
+  "overdueCount": 1790,
   "topVendors": [
     {
       "vendor": "Microsoft",
@@ -49,6 +49,36 @@
     }
   ],
   "recentEntries": [
+    {
+      "cveID": "CVE-2026-120705",
+      "vendorProject": "OSGeo",
+      "product": "GeoServer",
+      "vulnerabilityName": "OSGeo GeoServer XML Injection Vulnerability",
+      "dateAdded": "2026-11-27",
+      "dueDate": "2026-11-30",
+      "shortDescription": "OsGeo GeoServer contains an XML injection vulnerability that allows an unauthenticated remote attacker to cause the server to read local text files accessible to the GeoServer process or fetch attacker-specified HTTP or HTTPS URLs via a crafted ID parameter in the WFS 2.0 GetFeatureById stored query. This vulnerability can be chained with CVE-2026-129244, CVE-2026-129243, CVE-2026-129245, and CVE-2026-129242 to achieve unauthenticated remote code execution on an affected GeoServer instance.",
+      "knownRansomwareCampaignUse": "Unknown"
+    },
+    {
+      "cveID": "CVE-2026-129243",
+      "vendorProject": "OSGeo",
+      "product": "GeoServer",
+      "vulnerabilityName": "OSGeo GeoServer Incorrect Authorization Vulnerability",
+      "dateAdded": "2026-11-27",
+      "dueDate": "2026-11-30",
+      "shortDescription": "GeoServer contains an incorrect authorization vulnerability that allows an unauthenticated remote attacker to bypass service-level role checks and invoke operations protected solely by those checks via a request with a prefixed service parameter. This vulnerability can be chained with CVE-2026-129244, CVE-2026-120705, CVE-2026-129245, and CVE-2026-129242 to achieve unauthenticated remote code execution on an affected GeoServer instance.",
+      "knownRansomwareCampaignUse": "Unknown"
+    },
+    {
+      "cveID": "CVE-2026-136716",
+      "vendorProject": "Drupal",
+      "product": "Core",
+      "vulnerabilityName": "Drupal Core Improper Check for Unusual or Exceptional Conditions Vulnerability",
+      "dateAdded": "2026-11-27",
+      "dueDate": "2026-11-30",
+      "shortDescription": "Drupal Core contains an improper check for unusual or exceptional conditions vulnerability that allows an unauthenticated remote attacker to take over a site via the exposed Drupal installer when the site is in one of the affected unusual or incomplete installation states.",
+      "knownRansomwareCampaignUse": "Unknown"
+    },
     {
       "cveID": "CVE-2026-103406",
       "vendorProject": "Hewlett Packard Enterprise (HPE)",
@@ -167,36 +197,6 @@
       "dateAdded": "2026-11-24",
       "dueDate": "2026-11-27",
       "shortDescription": "Idunno AntiCsrf contains a deserialization of untrusted data vulnerability that allows an unauthenticated remote attacker to execute arbitrary code via object injection. The impacted product(s) could be end-of-life (EoL) and/or end-of-service (EoS). Users are advised to discontinue use and/or transition to a supported version.",
-      "knownRansomwareCampaignUse": "Unknown"
-    },
-    {
-      "cveID": "CVE-2026-132165",
-      "vendorProject": "Drupal",
-      "product": "Core",
-      "vulnerabilityName": "Drupal Core Remote Code Execution Vulnerability",
-      "dateAdded": "2026-11-24",
-      "dueDate": "2026-11-27",
-      "shortDescription": "Drupal Core contains a not failing securely vulnerability that could allow an unauthenticated attacker to take over an existing site or execute arbitrary code via the Drupal installer. Under specific conditions, the attacker can use install.php to attempt to reinstall Drupal on the site.",
-      "knownRansomwareCampaignUse": "Unknown"
-    },
-    {
-      "cveID": "CVE-2026-133968",
-      "vendorProject": "Project MONAI",
-      "product": "MONAI Label",
-      "vulnerabilityName": "Project MONAI MONAI Label Path Traversal Vulnerability",
-      "dateAdded": "2026-11-23",
-      "dueDate": "2026-11-26",
-      "shortDescription": "Project MONAI MONAI Label contains a path traversal vulnerability that allows an unauthenticated remote attacker to write arbitrary files outside the intended datastore directory, potentially resulting in remote code execution.",
-      "knownRansomwareCampaignUse": "Unknown"
-    },
-    {
-      "cveID": "CVE-2026-134624",
-      "vendorProject": "N-able",
-      "product": "MailAssure",
-      "vulnerabilityName": "N-able MailAssure (SpamExperts) Server-Side Request Forgery (SSRF) Vulnerability",
-      "dateAdded": "2026-11-23",
-      "dueDate": "2026-11-26",
-      "shortDescription": "N-able MailAssure (SpamExperts) contains a server-side request forgery vulnerability in the LDAP synchronization connection check that allows an authenticated API user to connect to arbitrary internal hosts and ports, determine which are reachable, and send crafted data to internal services.",
       "knownRansomwareCampaignUse": "Unknown"
     }
   ]
